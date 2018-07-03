@@ -22,10 +22,10 @@ class TableViewController: UITableViewController {
     
     //these are place holder ingredients
     //can fill these arrays up with ingredients or connect to databse
-    var temp_veg_ingredients = ["veg1", "veg2", "veg3"]
-    var temp_meat_ingredients = ["meat1", "meat2", "meat3"]
-    var temp_grain_ingredients = ["grain1", "grain2", "grain3"]
-    var temp_dairy_ingredients = ["dairy1", "dairy2", "dairy3"]
+    var temp_veg_ingredients = ["broccoli", "ginger", "garlic", "pepper", "peanuts", "cucumber", "cilantro", "lettuce", "mung bean", "scallions", "carrot"]
+    var temp_meat_ingredients = ["pork", "tofu"]
+    var temp_grain_ingredients = ["noodles", "rice"]
+    var temp_dairy_ingredients = ["milk"]
     
     //these arrays contain what users have chosen as their ingredients, each food group having their own array
     var veg_selected_ingredients = [String]()
@@ -163,7 +163,7 @@ class TableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var outputViewController = segue.destination as! OutputViewController
+        let outputViewController = segue.destination as! OutputViewController
         outputViewController.veg_selected_ingredients = veg_selected_ingredients
         outputViewController.meat_selected_ingredients = meat_selected_ingredients
         outputViewController.grain_selected_ingredients = grain_selected_ingredients

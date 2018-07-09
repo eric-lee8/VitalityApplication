@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716CF2FF20ECA73700758692 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716CF2FE20ECA73700758692 /* Ingredient.swift */; };
+		716CF30120ECA76C00758692 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716CF30020ECA76C00758692 /* Recipe.swift */; };
+		716CF30320ECA79800758692 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 716CF30220ECA79800758692 /* recipes.json */; };
 		AEA9194820E776AB00281430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA9194720E776AB00281430 /* AppDelegate.swift */; };
 		AEA9194A20E776AB00281430 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA9194920E776AB00281430 /* ViewController.swift */; };
 		AEA9194D20E776AB00281430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194B20E776AB00281430 /* Main.storyboard */; };
 		AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194E20E776AB00281430 /* Assets.xcassets */; };
 		AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9195020E776AB00281430 /* LaunchScreen.storyboard */; };
-		AEA9198020E8DE6400281430 /* EthnicityPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA9197F20E8DE6400281430 /* EthnicityPopOverViewController.swift */; };
-		AEA9198220E8E00E00281430 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA9198120E8E00E00281430 /* Shared.swift */; };
-		AEA9198420E8E3BC00281430 /* EthnicityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA9198320E8E3BC00281430 /* EthnicityViewController.swift */; };
-		E4AAB7BD20EA0CF70008B872 /* CreatePlateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7BC20EA0CF70008B872 /* CreatePlateTableViewController.swift */; };
+		E4064CFA20EC0490004624EC /* MeatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4064CF920EC0490004624EC /* MeatTableViewController.swift */; };
+		E4064CFC20EC049F004624EC /* GrainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4064CFB20EC049F004624EC /* GrainTableViewController.swift */; };
+		E4064CFE20EC04AD004624EC /* DairyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4064CFD20EC04AD004624EC /* DairyTableViewController.swift */; };
+		E4064D0020EC0C72004624EC /* vegetableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4064CFF20EC0C72004624EC /* vegetableTableViewController.swift */; };
+		E49AF40520EC67A30042A167 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AF40420EC67A30042A167 /* RecipeViewController.swift */; };
 		E4AAB7BF20EA11E50008B872 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */; };
 		E4AAB7FF20EA94BB0008B872 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		716CF2FE20ECA73700758692 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		716CF30020ECA76C00758692 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		716CF30220ECA79800758692 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		AEA9194420E776AB00281430 /* VitalityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitalityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA9194720E776AB00281430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA9194920E776AB00281430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,10 +35,11 @@
 		AEA9194E20E776AB00281430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA9195120E776AB00281430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA9195320E776AB00281430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEA9197F20E8DE6400281430 /* EthnicityPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthnicityPopOverViewController.swift; sourceTree = "<group>"; };
-		AEA9198120E8E00E00281430 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		AEA9198320E8E3BC00281430 /* EthnicityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthnicityViewController.swift; sourceTree = "<group>"; };
-		E4AAB7BC20EA0CF70008B872 /* CreatePlateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreatePlateTableViewController.swift; path = ../CreatePlateTableViewController.swift; sourceTree = "<group>"; };
+		E4064CF920EC0490004624EC /* MeatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTableViewController.swift; sourceTree = "<group>"; };
+		E4064CFB20EC049F004624EC /* GrainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainTableViewController.swift; sourceTree = "<group>"; };
+		E4064CFD20EC04AD004624EC /* DairyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyTableViewController.swift; sourceTree = "<group>"; };
+		E4064CFF20EC0C72004624EC /* vegetableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = vegetableTableViewController.swift; path = ../vegetableTableViewController.swift; sourceTree = "<group>"; };
+		E49AF40420EC67A30042A167 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		E4AAB7FE20EA94BB0008B872 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,18 +74,22 @@
 		AEA9194620E776AB00281430 /* VitalityApp */ = {
 			isa = PBXGroup;
 			children = (
-				E4AAB7BC20EA0CF70008B872 /* CreatePlateTableViewController.swift */,
-				E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */,
-				AEA9197F20E8DE6400281430 /* EthnicityPopOverViewController.swift */,
 				AEA9194720E776AB00281430 /* AppDelegate.swift */,
 				AEA9194920E776AB00281430 /* ViewController.swift */,
-				AEA9198320E8E3BC00281430 /* EthnicityViewController.swift */,
+				716CF30220ECA79800758692 /* recipes.json */,
 				AEA9194B20E776AB00281430 /* Main.storyboard */,
+				E49AF40420EC67A30042A167 /* RecipeViewController.swift */,
+				E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */,
+				E4064CFF20EC0C72004624EC /* vegetableTableViewController.swift */,
+				E4064CF920EC0490004624EC /* MeatTableViewController.swift */,
+				E4064CFB20EC049F004624EC /* GrainTableViewController.swift */,
+				E4064CFD20EC04AD004624EC /* DairyTableViewController.swift */,
 				E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */,
-				AEA9198120E8E00E00281430 /* Shared.swift */,
 				AEA9194E20E776AB00281430 /* Assets.xcassets */,
 				AEA9195020E776AB00281430 /* LaunchScreen.storyboard */,
 				AEA9195320E776AB00281430 /* Info.plist */,
+				716CF2FE20ECA73700758692 /* Ingredient.swift */,
+				716CF30020ECA76C00758692 /* Recipe.swift */,
 			);
 			path = VitalityApp;
 			sourceTree = "<group>";
@@ -143,6 +155,7 @@
 				AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */,
 				AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */,
 				AEA9194D20E776AB00281430 /* Main.storyboard in Resources */,
+				716CF30320ECA79800758692 /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,14 +166,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4064CFA20EC0490004624EC /* MeatTableViewController.swift in Sources */,
 				E4AAB7BF20EA11E50008B872 /* OutputViewController.swift in Sources */,
-				E4AAB7BD20EA0CF70008B872 /* CreatePlateTableViewController.swift in Sources */,
-				AEA9198020E8DE6400281430 /* EthnicityPopOverViewController.swift in Sources */,
+				E4064D0020EC0C72004624EC /* vegetableTableViewController.swift in Sources */,
 				E4AAB7FF20EA94BB0008B872 /* Model.xcdatamodeld in Sources */,
-				AEA9198420E8E3BC00281430 /* EthnicityViewController.swift in Sources */,
 				AEA9194A20E776AB00281430 /* ViewController.swift in Sources */,
-				AEA9198220E8E00E00281430 /* Shared.swift in Sources */,
+				716CF2FF20ECA73700758692 /* Ingredient.swift in Sources */,
+				E4064CFE20EC04AD004624EC /* DairyTableViewController.swift in Sources */,
+				E4064CFC20EC049F004624EC /* GrainTableViewController.swift in Sources */,
 				AEA9194820E776AB00281430 /* AppDelegate.swift in Sources */,
+				E49AF40520EC67A30042A167 /* RecipeViewController.swift in Sources */,
+				716CF30120ECA76C00758692 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

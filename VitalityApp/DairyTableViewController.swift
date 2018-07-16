@@ -2,7 +2,7 @@
 //  DairyTableViewController.swift
 //  VitalityApp
 //
-//  CMPT276
+//CMPT276
 //Project Group 16
 //Team Vitality
 // Members: Eric Joseph Lee, Phillip Choi, Jacky Huynh, Jordan Cheung

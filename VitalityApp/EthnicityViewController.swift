@@ -2,7 +2,7 @@
 //  EthnicityViewController.swift
 //  VitalityApp
 //
-//  Created by Eric Joseph Lee on 2018-07-01.
+//  Created by Eric Joseph Lee on 2018-07-13.
 //  Copyright © 2018 Eric Joseph Lee. All rights reserved.
 //
 
@@ -18,12 +18,11 @@ class EthnicityViewController: UIViewController {
         
         btnSelect.layer.cornerRadius = 5
         btnSelect.layer.borderWidth = 0.5
+        btnSelect.layer.borderColor = UIColor.lightGray.cgColor
         
-        let cn : String = Shared.shared.ethnicityName ?? "......."
+        let cn : String = Shared.shared.selected_cuisine ?? "---------"
         btnSelect.setTitle(cn,for: .normal)
         
     }
     
 }
-
-

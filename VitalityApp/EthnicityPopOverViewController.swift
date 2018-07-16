@@ -2,7 +2,7 @@
 //  EthnicityPopOverViewController.swift
 //  VitalityApp
 //
-//  Created by Eric Joseph Lee on 2018-07-01.
+//  Created by Eric Joseph Lee on 2018-07-13.
 //  Copyright © 2018 Eric Joseph Lee. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class EthnicityPopOverViewController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var tableView: UITableView!
     
-    var names: [String] = ["Chinese", "Korean", "Japanese", "Italian", "Indian"]
+    var cuisines: [String] = ["Chinese", "Korean", "japanese", "Indian"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,19 +31,18 @@ class EthnicityPopOverViewController: UIViewController, UITableViewDelegate, UIT
     
     // Returns count of items in tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.names.count;
+        return self.cuisines.count;
     }
     
     
     // Select item from tableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print(names[indexPath.row])
-        
-        Shared.shared.ethnicityName = names[indexPath.row]
+        print("Cuisine : " + cuisines[indexPath.row])
+        Shared.shared.selected_cuisine = cuisines[indexPath.row]
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "EthnicityViewController") as! ViewController
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "EthnicityViewController") as! EthnicityViewController
         self.present(newViewController, animated: true, completion: nil)
         
     }
@@ -52,9 +51,7 @@ class EthnicityPopOverViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.textLabel?.text = names[indexPath.row]
-        
+        cell.textLabel?.text = cuisines[indexPath.row]
         return cell
     }
     
@@ -64,4 +61,3 @@ class EthnicityPopOverViewController: UIViewController, UITableViewDelegate, UIT
         dismiss(animated: true, completion: nil)
     }
 }
-

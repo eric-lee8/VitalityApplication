@@ -22,8 +22,13 @@ class RecipeViewController: UIViewController {
     
     @IBOutlet weak var ingredients_list: UITextView! //Displays the list of ingredients
     
+    @IBAction func recipe_URL(_ sender: Any) {
+        UIApplication.shared.open(URL(string: recipe_URL)!)
+    }
+    
     var recipe:String = ""
     var ingredients = [String]()
+    var recipe_URL:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

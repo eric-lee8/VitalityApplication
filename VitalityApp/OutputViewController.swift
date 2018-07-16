@@ -11,7 +11,6 @@
 //
 // File created and worked on by Jacky Huynh, Eric Joseph Lee, Jordan Cheung, and Philip Choi
 //
-// Bugs: Recipes did not sort properly, not all recipes showed up, data was not properly sent to viewcontroller so kept crashing, problem erasing check marks on other selected recipes when more than one recipe was selected
 
 import UIKit
 
@@ -26,11 +25,13 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var tableView: UITableView!
     
     //ingredients to be displayed
-    var veg_selected_ingredients = [String]()
-    var meat_selected_ingredients = [String]()
-    var grain_selected_ingredients = [String]()
-    var dairy_selected_ingredients = [String]()
+    var veg_selected_ingredients = Shared.shared.veg_selected_ingredients
+    var meat_selected_ingredients = Shared.shared.meat_selected_ingredients
+    var grain_selected_ingredients = Shared.shared.grain_selected_ingredients
+    var dairy_selected_ingredients = Shared.shared.dairy_selected_ingredients
     
+    var cuisine = Shared.shared.selected_cuisine
+    var recipe_URL:String = ""
     var recipe_chosen:String = ""
     var recipe_ingredients = [String]()
     
@@ -41,19 +42,10 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     var str_grain = String()
     var str_dairy = String()
     
-    
-    //List of ingredients for the recipe that the user has selected has been hardwired for demonstration
-    //This feature will be implemented in version 2
-    var temp_recipes = [
-
-        ["tofu 1 pound", "broccoli 1 pound", "noodles 1 pound", "pepper 1 pinch"] //sesame noodles with baked tofu
-    ]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Output View Controller")
-
+        
         //testing purposes
         print("vegetables selected", veg_selected_ingredients)
         print("meats selected", meat_selected_ingredients)
@@ -147,7 +139,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
                 recipesToOverlapped.append((name: recipe, value: overlapped))
             }
         }
-
+        
         recipesToOverlapped = recipesToOverlapped.sorted(by: {$0.value > $1.value})
         
         
@@ -158,10 +150,9 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    
     // JSON file upload
     func get_recipes() -> [Recipe] {
-        if let path = Bundle.main.path(forResource: "recipes", ofType: "json") {
+        if let path = Bundle.main.path(forResource: cuisine, ofType: "json") {
             let url = URL(fileURLWithPath: path)
             do {
                 let data = try Data(contentsOf: url, options: .mappedIfSafe)
@@ -202,8 +193,15 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
             
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
             recipe_chosen = output[indexPath.row]
-            recipe_ingredients = temp_recipes[indexPath.row]
             
+            for recipe in get_recipes() {
+                if (recipe_chosen == recipe.name) {
+                    for ingredient in recipe.ingredients {
+                        recipe_ingredients.append(ingredient.name)
+                    }
+                    recipe_URL = recipe.url
+                }
+            }
         }
     }
     
@@ -219,6 +217,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         let recipeViewController = segue.destination as! RecipeViewController
         recipeViewController.recipe = recipe_chosen
         recipeViewController.ingredients = recipe_ingredients
+        recipeViewController.recipe_URL = recipe_URL
     }
     
 }

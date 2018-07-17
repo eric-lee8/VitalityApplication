@@ -18,9 +18,6 @@ import UIKit
 
 class OutputViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    //Displays the list of ingredients
-    @IBOutlet weak var display_ingredients: UITextView!
-    
     //Displays the list of recipies
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,7 +26,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     var meat_selected_ingredients = Shared.shared.meat_selected_ingredients
     var grain_selected_ingredients = Shared.shared.grain_selected_ingredients
     var dairy_selected_ingredients = Shared.shared.dairy_selected_ingredients
-    
+ 
     var cuisine = Shared.shared.selected_cuisine
     var recipe_URL:String = ""
     var recipe_chosen:String = ""
@@ -37,69 +34,10 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     
     var output: [String] = []
     
-    var str_veg = String()
-    var str_meat = String()
-    var str_grain = String()
-    var str_dairy = String()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Output View Controller")
-        
-        //testing purposes
-        print("vegetables selected", veg_selected_ingredients)
-        print("meats selected", meat_selected_ingredients)
-        print("grains selected", grain_selected_ingredients)
-        print("dairys selected", dairy_selected_ingredients, "\n")
-        
-        //Display the name of the ingredients on the test box
-        
-        str_veg = "Vegetable Ingredients:\n "
-        str_meat = "\nMeat Ingredients:\n "
-        str_grain = "\nGrain Ingredients:\n "
-        str_dairy = "\nDairy Ingredients:\n "
-        
-        if veg_selected_ingredients.isEmpty {
-            str_veg += "None\n"
-        }
-        for veg_ing in veg_selected_ingredients {
-            
-            str_veg += veg_ing + "\n "
-            
-        }
-        
-        if meat_selected_ingredients.isEmpty {
-            str_meat += "None\n"
-        }
-        
-        for meat_ing in meat_selected_ingredients {
-            
-            str_meat += meat_ing + "\n "
-            
-        }
-        
-        if grain_selected_ingredients.isEmpty {
-            str_grain += "None\n"
-        }
-        for grain_ing in grain_selected_ingredients {
-            
-            str_grain += grain_ing + "\n "
-            
-        }
-        
-        if dairy_selected_ingredients.isEmpty {
-            str_dairy += "None\n"
-        }
-        for dairy_ing in dairy_selected_ingredients {
-            
-            str_dairy += dairy_ing + "\n "
-            
-        }
-        
-        //display ingredients that user selected in order
-        display_ingredients.text =  str_veg + str_grain + str_dairy + str_meat
-        
-        
+
         // adding user input to the item array to compare with the ingredients from each recipes in data
         //structure
         
@@ -124,9 +62,8 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         
         //comparing user selected ingredients with data structure ingredients
         var recipesToOverlapped:[(name: Recipe, value: Int)] = []
-        var recipes = get_recipes()
         
-        for recipe in recipes {
+        for recipe in get_recipes() {
             var overlapped = 0
             for item in items {
                 for ingredient in recipe.ingredients {
@@ -144,10 +81,10 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         
         
         // adding recipes that matches with the ingredients that user selected from the most to least order
-        for (key, value) in recipesToOverlapped{
+        for (key, _) in recipesToOverlapped{
             output.append(key.name)
         }
-        
+
     }
     
     // JSON file upload
@@ -164,8 +101,6 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         }
         fatalError("Recipe.json does not exist")
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

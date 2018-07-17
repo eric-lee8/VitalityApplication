@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		AEA9194D20E776AB00281430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194B20E776AB00281430 /* Main.storyboard */; };
 		AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194E20E776AB00281430 /* Assets.xcassets */; };
 		AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9195020E776AB00281430 /* LaunchScreen.storyboard */; };
+		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
 		E486537120FC0729000E584E /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537020FC0729000E584E /* Chinese.json */; };
 		E486537520FC1DF4000E584E /* Indian.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537420FC1DF4000E584E /* Indian.json */; };
 		E49AF40520EC67A30042A167 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AF40420EC67A30042A167 /* RecipeViewController.swift */; };
@@ -47,6 +48,7 @@
 		AEA9194E20E776AB00281430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA9195120E776AB00281430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA9195320E776AB00281430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		E486537020FC0729000E584E /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
 		E486537420FC1DF4000E584E /* Indian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Indian.json; sourceTree = "<group>"; };
 		E49AF40420EC67A30042A167 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				AEA9194720E776AB00281430 /* AppDelegate.swift */,
 				AEA9194920E776AB00281430 /* ViewController.swift */,
 				AEA9194B20E776AB00281430 /* Main.storyboard */,
+				E43B060520FC325D0052A883 /* IngredientViewController.swift */,
 				AE5A385920F5C8FA0096281B /* SelectionViewController.swift */,
 				AE5A385720F58EB50096281B /* VegPopOverViewController.swift */,
 				AE12991420FC0A250008EB53 /* MeatPopOverViewController.swift */,
@@ -141,11 +144,12 @@
 				TargetAttributes = {
 					AEA9194320E776AB00281430 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = AEA9193F20E776AB00281430 /* Build configuration list for PBXProject "VitalityApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -183,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4AAB7BF20EA11E50008B872 /* OutputViewController.swift in Sources */,
+				E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */,
 				AE5A385820F58EB50096281B /* VegPopOverViewController.swift in Sources */,
 				E4AAB7FF20EA94BB0008B872 /* Model.xcdatamodeld in Sources */,
 				AEA9194A20E776AB00281430 /* ViewController.swift in Sources */,
@@ -342,10 +347,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VitalityApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CMPT276.VitalityApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -359,10 +362,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VitalityApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CMPT276.VitalityApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -41,6 +41,7 @@ class EthnicityPopOverViewController: UIViewController, UITableViewDelegate, UIT
         print("Cuisine : " + cuisines[indexPath.row])
         Shared.shared.selected_cuisine = cuisines[indexPath.row]
         
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "EthnicityViewController") as! EthnicityViewController
         self.present(newViewController, animated: true, completion: nil)

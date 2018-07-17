@@ -18,14 +18,14 @@ import UIKit
 
 class RecipeViewController: UIViewController {
 
-    @IBOutlet weak var recipe_name: UILabel! //Displays the name of the Plate
+    @IBOutlet weak var recipe_button: UIButton!
     
     @IBOutlet weak var ingredients_list: UITextView! //Displays the list of ingredients
     
     @IBAction func recipe_URL(_ sender: Any) {
         UIApplication.shared.open(URL(string: recipe_URL)!)
     }
-    
+
     var recipe:String = ""
     var ingredients = [String]()
     var recipe_URL:String = ""
@@ -39,7 +39,7 @@ class RecipeViewController: UIViewController {
         print("Recipe", recipe)
         print("ingredients", ingredients)
         
-        recipe_name.text = recipe
+        recipe_button.setTitle(recipe, for: .normal)
         
         var str_ingredients = String()
         

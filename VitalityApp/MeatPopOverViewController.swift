@@ -1,20 +1,24 @@
 //
-//  MeatPopOverViewController.swift
-//  VitalityApp
+// MeatPopOverViewController.swift
+// VitalityApp
 //
-//  Created by Eric Joseph Lee on 2018-07-15.
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
+// CMPT276
+// Project Group 16
+// Team Vitality
+// Members: Eric Joseph Lee, Phillip Choi, Jacky Huynh, Jordan Cheung
 //
-
+// File Created by Eric Lee, and worked on by Jacky Huynh, Eric Lee, Philip Choi, and Jordan Cheung
+// Bugs(fixed): selected ingredients were not checkmarked, checkmarks were not saved when returning to view controller to change selected ingredients, cells were being recycled so unchecked cells would become checked after scrolling
 import UIKit
 
 class MeatPopOverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    // objects
     @IBOutlet weak var Popupview: UIView!
-    
     @IBOutlet weak var tableView: UITableView!
     
-    var meat_ingredients: [String] = ["pork", "tofu", "beef", "chicken", "octopus", "cuddlefish", "frog", "lamb"]
+    // ingredients that can be selected
+    var meat_ingredients: [String] = ["Beef", "Beef - Flank", "Beef - Ripeye", "Chicken", "Chicken - Breast", "Chicken - Thigh", "Crab", "Crab - Imitation", "Egg", "Lamb - Flank", "Pork", "Shrimp", "Tofu"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +38,8 @@ class MeatPopOverViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     
-    // Select item from tableView
+    // Detects if a cell is selected in the table, if selected checkmark appears, and added to selected meat in shared file
+    // removes ingredient if checkmark is gone
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if ( tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark ) {
@@ -52,7 +57,7 @@ class MeatPopOverViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
-    //Assign values for tableView
+    // Displays the cells, as well as assign checkmarks to to previously selected ingredients if the viewcontroller is revisisted
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
@@ -60,17 +65,17 @@ class MeatPopOverViewController: UIViewController, UITableViewDelegate, UITableV
         if ( Shared.shared.meat_selected_ingredients.contains((cell.textLabel?.text)!)) {
             cell.accessoryType = UITableViewCellAccessoryType.checkmark
         }
+        if ( cell.accessoryType == UITableViewCellAccessoryType.checkmark && !Shared.shared.meat_selected_ingredients.contains((cell.textLabel?.text)!)) {
+            cell.accessoryType = UITableViewCellAccessoryType.none
+        }
         return cell
     }
     
     
     // Close PopUp
     @IBAction func closePopup(_ sender: Any) {
-        //dismiss(animated: true, completion: nil)
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "SelectionViewController") as! SelectionViewController
-        self.present(newViewController, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+
     }
 }
 

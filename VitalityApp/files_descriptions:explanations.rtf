@@ -32,23 +32,29 @@
 
 \f0\fs22 \cf2 //\
 \
-files: AppDelegate.swift, ViewController.swift, VegetableTableViewController.swift, MeatTableViewController.swift, GrainTableViewController.swift, DairyTableViewController.swift, OutputViewController.swift, RecipeViewController.swift, Ingredient.swift, Recipe.swift, recipes.json\
+files: AppDelegate.swift, ViewController.swift, CuisineViewController.swift, CuisinePopOverViewController.swift, SelectionViewController.swift, VegPopOverViewController.swift, MeatPopOverViewController.swift, GrainPopOverViewController.swift, DairyPopOverViewController.swift, ingredientViewController.swift,OutputViewController.swift, RecipeViewController.swift\
 \
 AppDelegate.swift: A set of methods that are called by UIApplication in response to important events\
 \
 ViewController.swift: view controller for the initial window of the app \
 \
-VegetableTableViewController.swift: View controller that is a table that lists all the vegetable ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are sent to the next view controllers \
+CuisineViewController.swift: View controller that has a button that takes users to cuisine selection, and a next button to go to next view controller after cuisine is selected\
 \
-MeatTableViewController.swift : View controller that is a table that lists all the meat ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are sent to the next view controllers \
+CuisinePopOverViewController.swift: View controller that is a table of cuisines that users can select\
 \
-GrainTableViewController.swift : View controller that is a table that lists all the grain ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are sent to the next view controllers\
+VegPopOverViewController.swift: View controller that is a table that lists all the vegetable ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are in the shared file\
 \
-DairyTableViewController.swift : View controller that is a table that lists all the dairy ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are sent to the next view controller\
+MeatPopOverViewController.swift : View controller that is a table that lists all the meat ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are in the shared file\
+ \
+GrainPopOverViewController.swift : View controller that is a table that lists all the grain ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are in the shared file\
 \
-OutputViewController.swift : After having gone through all ingredient view controllers all data goes to the OutputViewController.swift where all the data are in arrays and are compared to the ingredients in each recipe in the json file, and records the recipes that are most matched to least matched. Afterwards displaying all the ingredients the users picked, and displaying the suggested ingredients in order. As well as allowing users to pick which ingredient they want to make. Once users have picked the ingredient they want the data is sent to the final ViewController\
+DairyPopOverViewController.swift : View controller that is a table that lists all the dairy ingredients for users to pick. Contains functions to display all the ingredients, and functions that detect when certain ingredients are chosen, and adds them to arrays that are in the shared file\
 \
-RecipeVewController.swift: view controller that displays the name of the final recipe that users have picked along with the ingredients required\
+IngredientViewController.swift: View controller that displays all the ingredients that users have selected, with a button to go to the next view controller\
+\
+OutputViewController.swift: After ingredient selection is finished the file goes to the shared file and grabs all the ingredients, and cuisine selected. Then goes to the right json file and compares to every single recipe, and ordered them from most matched to least matched. After displaying the recipes on the screen for users to select. After user selection recipe name, ingredients, and url and then sent to the next view controller\
+\
+RecipeVewController.swift: view controller that displays the name of the final recipe that users have picked along with the ingredients required. URL link is assigned to the button so users can see the recipe online, in safari\
 \
 Recipe.swift\
 // This class has the same format as recipes from the JSON file. When the JSON file is read by the reading function, It reads the name , url of the recipe link, and the array of the ingredients of the recipes from the JSON file and allows these datas to get parsed\
@@ -57,6 +63,18 @@ Recipe.swift\
 Ingredient.swift\
 // This class allows to read the ingredients array in JSON file. It has the same format as the JSON ingredient array. It allows these datas to get parsed and handled when JSON file is read from the JSON reading function.\
 \
-recipes.json  on the \
+Shared.swift: A shared file that contains variables that all viewcontrollers can access\
+ \
+Chinese.json  on the \
 // Data structure in JSON format. It contains the name of the recipe, ingredients, and the url address of the recipes on the internet\
+\
+Indian.json\
+// Data structure in JSON format. It contains the name of the recipe, ingredients, and the url address of the recipes on the internet\
+\
+Korean.json\
+// Data structure in JSON format. It contains the name of the recipe, ingredients, and the url address of the recipes on the internet\
+\
+Japanese.json\
+// Data structure in JSON format. It contains the name of the recipe, ingredients, and the url address of the recipes on the internet\
+\
 }

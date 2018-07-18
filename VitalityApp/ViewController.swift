@@ -1,15 +1,13 @@
 //
-//  ViewController.swift
-//  VitalityApp
+// ViewController.swift
+// VitalityApp
 //
-//  CMPT276
-//Project Group 16
-//Team Vitality
-// Members: Eric Joseph Lee, Phillip Choi, Jacky Huynh, Jordan Cheung
+// CMPT276
+// Project Group 16
+// Team Vitality
+// Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
-//
-// File created by Eric Joseph Lee, Jacky
+// File created by Eric Joseph Lee, Jacky Huynh
 
 
 import UIKit

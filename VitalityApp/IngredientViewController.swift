@@ -1,15 +1,20 @@
 //
-//  IngredientViewController.swift
-//  VitalityApp
+// IngredientViewController.swift
+// VitalityApp
 //
-//  Created by Jacky Huynh on 2018-07-15.
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
+// CMPT276
+// Project Group 16
+// Team Vitality
+// Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
+// File Created by and worked on by Jacky Huynh
+// Bugs(fixed): Objects were not displaying in the right positions and sizes, back button was also missing
 
 import UIKit
 
 class IngredientViewController: UIViewController {
 
+    // List of ingredients
     @IBOutlet weak var ingredient_list: UITextView!
     
     //ingredients to be displayed
@@ -18,7 +23,6 @@ class IngredientViewController: UIViewController {
     var grain_selected_ingredients = Shared.shared.grain_selected_ingredients
     var dairy_selected_ingredients = Shared.shared.dairy_selected_ingredients
     
-    var output: [String] = []
     
     var str_veg = String()
     var str_meat = String()
@@ -34,7 +38,6 @@ class IngredientViewController: UIViewController {
         print("dairys selected", dairy_selected_ingredients, "\n")
         
         //Display the name of the ingredients on the test box
-        
         str_veg = "Vegetable Ingredients:\n "
         str_meat = "\nMeat Ingredients:\n "
         str_grain = "\nGrain Ingredients:\n "

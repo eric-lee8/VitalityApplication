@@ -1,31 +1,33 @@
 //
-//  RecipeViewController.swift
-//  VitalityApp
+// RecipeViewController.swift
+// VitalityApp
 //
-//  CMPT276
-//Project Group 16
-//Team Vitality
-// Members: Eric Joseph Lee, Phillip Choi, Jacky Huynh, Jordan Cheung
+// CMPT276
+// Project Group 16
+// Team Vitality
+// Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
+// File Created by Eric Lee, and worked on by Jacky Huynh, Eric Lee, and Jordan Cheung
 //
-// File created by Jacky Huynh, and worked on by Eric Joseph Lee
+// Bugs(fixed): Recipe name was not showing up properly, recipe name was cut off when displayed, URL link was not working 
 //
-// Bugs: Recipe name was not showing up properly, recipe name was cut off when displayed
+// Added: URL link to name of the recipe
+
 import UIKit
 
 //The view controller of the page that displays your selected Heathy Plate with all of its details
-
 class RecipeViewController: UIViewController {
 
+    // recipe button, and text view objects
     @IBOutlet weak var recipe_button: UIButton!
+    @IBOutlet weak var ingredients_list: UITextView!
     
-    @IBOutlet weak var ingredients_list: UITextView! //Displays the list of ingredients
-    
+    // opens safari with link if button is clicked
     @IBAction func recipe_URL(_ sender: Any) {
         UIApplication.shared.open(URL(string: recipe_URL)!)
     }
 
+    // recipe name, ingredients, and URL link
     var recipe:String = ""
     var ingredients = [String]()
     var recipe_URL:String = ""
@@ -39,10 +41,10 @@ class RecipeViewController: UIViewController {
         print("Recipe", recipe)
         print("ingredients", ingredients)
         
+        // sets the button title
         recipe_button.setTitle(recipe, for: .normal)
         
         var str_ingredients = String()
-        
         str_ingredients = "List of Ingredients : \n"
         
         

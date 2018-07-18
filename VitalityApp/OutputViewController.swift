@@ -1,16 +1,15 @@
 //
-//  OutputViewController.swift
-//  VitalityApp
+// OutputViewController.swift
+// VitalityApp
 //
-//  CMPT276
-//Project Group 16
-//Team Vitality
+// CMPT276
+// Project Group 16
+// Team Vitality
 // Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
-//
 // File created and worked on by Jacky Huynh, Eric Joseph Lee, Jordan Cheung, and Philip Choi
-//
+// All JSON files created by Philip Choi
+// Bugs(fixed): Objects were displayed in the wrong positions
 
 import UIKit
 
@@ -20,8 +19,9 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     
     //Displays the list of recipies
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var btnCreate: UIButton!
     
-    //ingredients to be displayed
+    // gets the ingredients from the shared file
     var veg_selected_ingredients = Shared.shared.veg_selected_ingredients
     var meat_selected_ingredients = Shared.shared.meat_selected_ingredients
     var grain_selected_ingredients = Shared.shared.grain_selected_ingredients
@@ -37,7 +37,8 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Output View Controller")
-
+        btnCreate.isHidden = true
+        
         // adding user input to the item array to compare with the ingredients from each recipes in data
         //structure
         
@@ -88,6 +89,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     // JSON file upload
+    // goes to json file according the cuisine users have selected, which is assigned to the variable "cuisine"
     func get_recipes() -> [Recipe] {
         if let path = Bundle.main.path(forResource: cuisine, ofType: "json") {
             let url = URL(fileURLWithPath: path)
@@ -118,10 +120,12 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     // function that detects if a cell is detected, if a cell is detected put a checkmark, and if another cell is is clicked without a checkmark then put a checkmark on that cell and remove all other checkmarks
-    // function also assigning the most recent check marked recipe and its ingredients to variables that will be sent to the next view controller
+    // function goes through json file and gets the recipe name, and ingredients, and assigns them to variables
+    // checks if atleast one ingredient is selected for the create button to appear
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if (tableView.cellForRow(at: indexPath)?.accessoryType != UITableViewCellAccessoryType.checkmark)  {
-            
+        
             for i in 0...output.count {
                 tableView.cellForRow(at: [0,i])?.accessoryType = UITableViewCellAccessoryType.none
             }
@@ -138,8 +142,14 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
                 }
             }
         }
+        
+        if ( recipe_chosen.isEmpty != true ) {
+            btnCreate.isHidden = false
+        }
+        
     }
     
+    // creates the cells 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.textLabel?.text = output[indexPath.row]

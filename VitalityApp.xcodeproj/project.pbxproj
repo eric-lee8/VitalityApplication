@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3030404BE2BCB99C5826D211 /* Pods_VitalityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DAFAA909326D1C53693384 /* Pods_VitalityApp.framework */; };
 		716CF2FF20ECA73700758692 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716CF2FE20ECA73700758692 /* Ingredient.swift */; };
 		716CF30120ECA76C00758692 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716CF30020ECA76C00758692 /* Recipe.swift */; };
 		AE12991120F955390008EB53 /* CuisineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE12991020F955390008EB53 /* CuisineViewController.swift */; };
@@ -23,6 +24,7 @@
 		AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194E20E776AB00281430 /* Assets.xcassets */; };
 		AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9195020E776AB00281430 /* LaunchScreen.storyboard */; };
 		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
+		E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E454F6F22104544F00B63F74 /* GoogleService-Info.plist */; };
 		E486537120FC0729000E584E /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537020FC0729000E584E /* Chinese.json */; };
 		E486537520FC1DF4000E584E /* Indian.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537420FC1DF4000E584E /* Indian.json */; };
 		E493E04620FEAC680036F83D /* Korean.json in Resources */ = {isa = PBXBuildFile; fileRef = E493E04520FEAC680036F83D /* Korean.json */; };
@@ -33,8 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62959FB4A34F87680E0D5156 /* Pods-VitalityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VitalityApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VitalityApp/Pods-VitalityApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6A5792298898C20F35050A64 /* Pods-VitalityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VitalityApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-VitalityApp/Pods-VitalityApp.release.xcconfig"; sourceTree = "<group>"; };
 		716CF2FE20ECA73700758692 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		716CF30020ECA76C00758692 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		71DAFAA909326D1C53693384 /* Pods_VitalityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VitalityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE12991020F955390008EB53 /* CuisineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineViewController.swift; sourceTree = "<group>"; };
 		AE12991220F9557D0008EB53 /* CuisinePopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisinePopOverViewController.swift; sourceTree = "<group>"; };
 		AE12991420FC0A250008EB53 /* MeatPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatPopOverViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		AEA9195120E776AB00281430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA9195320E776AB00281430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		E454F6F22104544F00B63F74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E486537020FC0729000E584E /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
 		E486537420FC1DF4000E584E /* Indian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Indian.json; sourceTree = "<group>"; };
 		E493E04520FEAC680036F83D /* Korean.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Korean.json; sourceTree = "<group>"; };
@@ -65,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3030404BE2BCB99C5826D211 /* Pods_VitalityApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CADB5CFDE372F27FC6EE178 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62959FB4A34F87680E0D5156 /* Pods-VitalityApp.debug.xcconfig */,
+				6A5792298898C20F35050A64 /* Pods-VitalityApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AEA9193B20E776AB00281430 = {
 			isa = PBXGroup;
 			children = (
 				AEA9194620E776AB00281430 /* VitalityApp */,
 				AEA9194520E776AB00281430 /* Products */,
+				9CADB5CFDE372F27FC6EE178 /* Pods */,
+				CD40DD4D0F412CEF8B15E941 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,8 +132,17 @@
 				716CF2FE20ECA73700758692 /* Ingredient.swift */,
 				AE5A385520F58CA00096281B /* Shared.swift */,
 				716CF30020ECA76C00758692 /* Recipe.swift */,
+				E454F6F22104544F00B63F74 /* GoogleService-Info.plist */,
 			);
 			path = VitalityApp;
+			sourceTree = "<group>";
+		};
+		CD40DD4D0F412CEF8B15E941 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71DAFAA909326D1C53693384 /* Pods_VitalityApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEA9195620E776AB00281430 /* Build configuration list for PBXNativeTarget "VitalityApp" */;
 			buildPhases = (
+				15F3FAED8206B7415C190B27 /* [CP] Check Pods Manifest.lock */,
 				AEA9194020E776AB00281430 /* Sources */,
 				AEA9194120E776AB00281430 /* Frameworks */,
 				AEA9194220E776AB00281430 /* Resources */,
+				D536EE91D4DEEC1A77050B38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */,
+				E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */,
 				E493E04620FEAC680036F83D /* Korean.json in Resources */,
 				AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */,
 				E486537120FC0729000E584E /* Chinese.json in Resources */,
@@ -188,6 +218,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15F3FAED8206B7415C190B27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VitalityApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D536EE91D4DEEC1A77050B38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VitalityApp/Pods-VitalityApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VitalityApp/Pods-VitalityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEA9194020E776AB00281430 /* Sources */ = {
@@ -350,6 +421,7 @@
 		};
 		AEA9195720E776AB00281430 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62959FB4A34F87680E0D5156 /* Pods-VitalityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -365,6 +437,7 @@
 		};
 		AEA9195820E776AB00281430 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A5792298898C20F35050A64 /* Pods-VitalityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

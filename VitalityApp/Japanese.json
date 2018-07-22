@@ -1,0 +1,729 @@
+ [{
+  "name": "Japanese Omelet",
+  "url": "http://japaneserecipes.wikia.com/wiki/Omurice_(Japanese_omelet)_by_Elle_Bee",
+  "ingredients": [{
+                  "name": "Rice - Calrose",
+                  "amount": "4",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Chicken - Breast",
+                  "amount": "1/2",
+                  "measure": "Pound"
+                  },
+                  {
+                  "name": "Mushroom - White",
+                  "amount": "4",
+                  "measure": "sliced"
+                  },
+                  {
+                  "name": "Onion - Medium",
+                  "amount": "1/2",
+                  "measure": "chopped"
+                  },
+                  {
+                  "name": "Salt",
+                  "amount": "1",
+                  "measure": "pinch"
+                  },
+                  {
+                  "name": "Pepper",
+                  "amount": "1",
+                  "measure": "Pinch"
+                  },
+                  {
+                  "name": "Ketchup",
+                  "amount": "4",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Vegetable Oil",
+                  "amount": "1",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Egg",
+                  "amount": "8",
+                  "measure": "medium size"
+                  }]
+  },
+  {
+  "name": "Soba Noodles",
+  "url": "http://japaneserecipes.wikia.com/wiki/Auntie%27s_Soba_Noodles",
+  "ingredients": [{
+                  "name": "Noodle - Soba",
+                  "amount": "1",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Sesame Oil",
+                  "amount": "1/4",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "1/4",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Balsamic Vinegar",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Chili Oil",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Sesame Seeds",
+                  "amount": "1/2",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "1",
+                  "measure": "cup"
+                  }]
+  },  
+  {
+  "name": "Chirashi Zushi",
+  "url": "http://japaneserecipes.wikia.com/wiki/Chirashi-zushi",
+  "ingredients": [{
+                  "name": "Rice - Calrose",
+                  "amount": "2.25",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Rice Vinegar",
+                  "amount": "1/4",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "3.5",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Salt",
+                  "amount": "1",
+                  "measure": "tsp"
+                  },
+                  {
+                  "name": "Cucumber",
+                  "amount": "1",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Tuna",
+                  "amount": "1/2",
+                  "measure": "lb"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "3",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Wasabi",
+                  "amount": "10",
+                  "measure": "gram"
+                  },
+                  {
+                  "name": "Mushroom - Shiitake",
+                  "amount": "8",
+                  "measure": "pieces"
+                  },
+                  {
+                  "name": "Mirin",
+                  "amount": "1",
+                  "measure": "tsp"
+                  },
+                  {
+                  "name": "Sesame seeds",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },                  
+                  {
+                  "name": "Imitation Crab",
+                  "amount": "2",
+                  "measure": "oz"
+                  }]
+  },
+  {
+  "name": "Okonomi Yaki",
+  "url": "http://japaneserecipes.wikia.com/wiki/Okonomi_Yaki",
+  "ingredients": [{
+                  "name": "Cabbage - Green",
+                  "amount": "4",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Carrot",
+                  "amount": "1",
+                  "measure": "Large"
+                  },
+                  {
+                  "name": "Onion - Medium",
+                  "amount": "1/2",
+                  "measure": "sliced"
+                  },
+                  {
+                  "name": "Celery",
+                  "amount": "3",
+                  "measure": "sticks"
+                  },
+                  {
+                  "name": "Flour",
+                  "amount": "2",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Egg",
+                  "amount": "1",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Salt",
+                  "amount": "1",
+                  "measure": "tsp"
+                  },
+                  {
+                  "name": "Milk",
+                  "amount": "10",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Chicken",
+                  "amount": "1/2",
+                  "measure": "cup"
+                  }]
+  },  
+  {
+  "name": "Daikon Zosui",
+  "url": "http://japaneserecipes.wikia.com/wiki/Daikon_Zosui",
+  "ingredients": [{
+                  "name": "Rice - Calrose",
+                  "amount": "2.5",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Mushroom - Shiitake",
+                  "amount": "3/4",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Radish",
+                  "amount": "1.5",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Carrot",
+                  "amount": "1/4",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Wakame",
+                  "amount": "1/2",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Vegetable Stock",
+                  "amount": "5",
+                  "measure": "cups"
+                  },
+                  {
+                  "name": "Salt",
+                  "amount": "1",
+                  "measure": "pinch"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "2.5",
+                  "measure": "tbsp"
+                  }]
+  },
+  {
+  "name": "Cucumbers with Soy Sesame Dressing",
+  "url": "http://japaneserecipes.wikia.com/wiki/Cucumbers_with_Soy_Sesame_Dressing",
+  "ingredients": [{
+                  "name": "Sesame seeds",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Rice Wine Vinegar",
+                  "amount": "12",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Peanut Oil",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Sesame Oil",
+                  "amount": "8",
+                  "measure": "tsp"
+                  },
+                  {
+                  "name": "Pepper - Red Chili",
+                  "amount": "6",
+                  "measure": "small size"
+                  },
+                  {
+                  "name": "Cucumber",
+                  "amount": "2",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Onion - Red",
+                  "amount": "5",
+                  "measure": "Pound"
+                  },
+                  {
+                  "name": "Cilantro",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  }]
+  },
+  {
+  "name": "Broccoli Goma-ae",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-sesame-seed-dressing-with-brocolli-goma-ae.html",
+  "ingredients": [{
+                  "name": "Broccoli",
+                  "amount": "1",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Sesame Seeds",
+                  "amount": "3",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "3",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  }]
+  },
+  {
+  "name": "Cucumber with Crab Sunomono",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-cucumber-with-crabkani-to-kyuri-no-sunomono.html",
+  "ingredients": [{
+                  "name": "Cucumber",
+                  "amount": "2",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Salt",
+                  "amount": "1",
+                  "measure": "tsp"
+                  },
+                  {
+                  "name": "Crab",
+                  "amount": "6",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Rice Vinegar",
+                  "amount": "1/4",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Soy sauce",
+                  "amount": "1/4",
+                  "measure": "tsp"
+                  },
+                  {
+                  "name": "Sesame Seeds",
+                  "amount": "1",
+                  "measure": "pinch"
+                  }]
+  },
+  {
+  "name": "Japanese Simmered Beef and Vegetables - Sukiyaki",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-simmered-beef-and-vegetables-sukiyaki.html",
+  "ingredients": [{
+                  "name": "Beef - Rip Eye",
+                  "amount": "1",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Tofu",
+                  "amount": "12",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Vegetables",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "6",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Noodle - Shirataki",
+                  "amount": "1",
+                  "measure": "pkg"
+                  },
+                  {
+                  "name": "Bamboo shoots",
+                  "amount": "8",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Mushroom - Mixed",
+                  "amount": "1",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "1",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "3",
+                  "measure": "tbsp"
+                  }]
+  },
+  {
+  "name": "Japanese Noodles - Menrui",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-noodles-menrui.html",
+  "ingredients": [{
+                  "name": "Noodles",
+                  "amount": "8",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Dashinomoto",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "10",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "3",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "1",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Cucumbers",
+                  "amount": "1",
+                  "measure": "Medium size"
+                  }]
+  },
+  {
+  "name": "Oyako Donburi",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-oyako-donburi.html",
+  "ingredients": [{
+                  "name": "Chicken",
+                  "amount": "1/2",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Egg",
+                  "amount": "5",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Mushroom - White",
+                  "amount": "3",
+                  "measure": "whole"
+                  },
+                  {
+                  "name": "Soy Sauce",
+                  "amount": "1/3",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "2",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Onion - Medium",
+                  "amount": "1",
+                  "measure": "sliced"
+                  },
+                  {
+                  "name": "Spanich",
+                  "amount": "2",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Flour",
+                  "amount": "1/2",
+                  "measure": "Pound"
+                  },
+                  {
+                  "name": "Sugar",
+                  "amount": "1/4",
+                  "measure": "cup"
+                  }]
+  },
+  {
+  "name": "Yakisoba",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-yakisoba.html",
+  "ingredients": [{
+                  "name": "Noodle - Yakisoba",
+                  "amount": "3",
+                  "measure": "pkg"
+                  },
+                  {
+                  "name": "Carrot",
+                  "amount": "1",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Cabbage - Green",
+                  "amount": "1/4",
+                  "measure": "small size"
+                  },
+                  {
+                  "name": "Pork",
+                  "amount": "1/4",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Yakisoba Sauce",
+                  "amount": "1/3",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Ginger - Pickle",
+                  "amount": "1",
+                  "measure": "pinch"
+                  },
+                  {
+                  "name": "Seaweed",
+                  "amount": "1",
+                  "measure": "pinch"
+                  }]
+  },
+  {
+  "name": "Japanese Bean Paste Soup - Misoshiru",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-bean-paste-soup-misoshiru.html",
+  "ingredients": [{
+                  "name": "Dashinomoto",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Miso",
+                  "amount": "1/2",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Tofu",
+                  "amount": "1/2",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "2",
+                  "measure": "chopped"
+                  }]
+  },
+  {
+  "name": "Japanese Eggdrop Soup - Tamago Toji",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japanese-eggdrop-soup-tamago-toji.html",
+  "ingredients": [{
+                  "name": "Egg",
+                  "amount": "1",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Vegetable Stock",
+                  "amount": "3",
+                  "measure": "cup"
+                  }]
+  },
+  {
+  "name": "Japanese Eggplant Miso Soup",
+  "url": "http://www.worldfoodrecipes.com/recipe-of-japnese-eggplant-miso-soup.html",
+  "ingredients": [{
+                  "name": "Miso",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "2",
+                  "measure": "chopped"
+                  },
+                  {
+                  "name": "Tofu",
+                  "amount": "1/2",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Carrot",
+                  "amount": "1",
+                  "measure": "chopped"
+                  },
+                  {
+                  "name": "Eggplant - Asian",
+                  "amount": "1",
+                  "measure": "cup"
+                  }]
+  },
+  {
+  "name": "Stir-fried Japanese Eggplant with Ginger and Miso",
+  "url": "https://www.simplyrecipes.com/recipes/stir_fried_japanese_eggplant_with_ginger_and_miso/",
+  "ingredients": [{
+                  "name": "Miso",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Sake",
+                  "amount": "1.5",
+                  "measure": "tsp"
+                  },
+                                  {
+                  "name": "Eggplant - Asian",
+                  "amount": "1",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Canola Oil",
+                  "amount": "6",
+                  "measure": "tbsp"
+                  },
+                                  {
+                  "name": "Pepper - Chili",
+                  "amount": "2",
+                  "measure": "whole"
+                  },
+                  {
+                  "name": "Ginger",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  },                                    
+                  {
+                  "name": "Basil",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  }]
+  },
+  {
+  "name": "Chicken Ramen",
+  "url": "https://www.simplyrecipes.com/recipes/weeknight_chicken_ramen/",
+  "ingredients": [{
+                  "name": "Sesame oil",
+                  "amount": "2",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Onion - Green",
+                  "amount": "4",
+                  "measure": "medium size"
+                  },
+                  {
+                  "name": "Garlic",
+                  "amount": "1",
+                  "measure": "clove"
+                  },
+                  {
+                  "name": "Carrot",
+                  "amount": "1",
+                  "measure": "small"
+                  },
+                  {
+                  "name": "Mushroom - Mixed",
+                  "amount": "4",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Cabbage - Napa",
+                  "amount": "0.5",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Spinach",
+                  "amount": "0.5",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Kale",
+                  "amount": "0.5",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Ginger",
+                  "amount": "1",
+                  "measure": "inch slice"
+                  },
+                  {
+                  "name": "Chicken Broth",
+                  "amount": "6",
+                  "measure": "cup"
+                  },
+                  {
+                  "name": "Brown Sugar",
+                  "amount": "1",
+                  "measure": "tbsp"
+                  },
+                  {
+                  "name": "Egg",
+                  "amount": "4",
+                  "measure": "large size"
+                  },
+                  {
+                  "name": "Noodle - Ramen",
+                  "amount": "20",
+                  "measure": "oz"
+                  },
+                  {
+                  "name": "Chicken",
+                  "amount": "2",
+                  "measure": "pound"
+                  },
+                  {
+                  "name": "Cilantro",
+                  "amount": "1",
+                  "measure": "stem"
+                  }]
+
+}]

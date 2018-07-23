@@ -25,6 +25,7 @@
 		AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9195020E776AB00281430 /* LaunchScreen.storyboard */; };
 		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
 		E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E454F6F22104544F00B63F74 /* GoogleService-Info.plist */; };
+		E454F6F521045BA500B63F74 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E454F6F421045BA500B63F74 /* HistoryViewController.swift */; };
 		E486537120FC0729000E584E /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537020FC0729000E584E /* Chinese.json */; };
 		E486537520FC1DF4000E584E /* Indian.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537420FC1DF4000E584E /* Indian.json */; };
 		E493E04620FEAC680036F83D /* Korean.json in Resources */ = {isa = PBXBuildFile; fileRef = E493E04520FEAC680036F83D /* Korean.json */; };
@@ -57,6 +58,7 @@
 		AEA9195320E776AB00281430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		E454F6F22104544F00B63F74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E454F6F421045BA500B63F74 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E486537020FC0729000E584E /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
 		E486537420FC1DF4000E584E /* Indian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Indian.json; sourceTree = "<group>"; };
 		E493E04520FEAC680036F83D /* Korean.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Korean.json; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				AE12991220F9557D0008EB53 /* CuisinePopOverViewController.swift */,
 				E49AF40420EC67A30042A167 /* RecipeViewController.swift */,
 				E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */,
+				E454F6F421045BA500B63F74 /* HistoryViewController.swift */,
 				E486537020FC0729000E584E /* Chinese.json */,
 				E486537420FC1DF4000E584E /* Indian.json */,
 				E493E04520FEAC680036F83D /* Korean.json */,
@@ -129,8 +132,8 @@
 				AEA9194E20E776AB00281430 /* Assets.xcassets */,
 				AEA9195020E776AB00281430 /* LaunchScreen.storyboard */,
 				AEA9195320E776AB00281430 /* Info.plist */,
-				716CF2FE20ECA73700758692 /* Ingredient.swift */,
 				AE5A385520F58CA00096281B /* Shared.swift */,
+				716CF2FE20ECA73700758692 /* Ingredient.swift */,
 				716CF30020ECA76C00758692 /* Recipe.swift */,
 				E454F6F22104544F00B63F74 /* GoogleService-Info.plist */,
 			);
@@ -246,11 +249,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VitalityApp/Pods-VitalityApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +285,7 @@
 				AE12991720FC0A360008EB53 /* GrainPopOverViewController.swift in Sources */,
 				AE12991520FC0A250008EB53 /* MeatPopOverViewController.swift in Sources */,
 				716CF30120ECA76C00758692 /* Recipe.swift in Sources */,
+				E454F6F521045BA500B63F74 /* HistoryViewController.swift in Sources */,
 				AE5A385A20F5C8FA0096281B /* SelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,5 +7,6 @@ target 'VitalityApp' do
 
   # Pods for VitalityApp
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end

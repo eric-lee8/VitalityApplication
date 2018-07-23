@@ -14,6 +14,7 @@
 // Added: URL link to name of the recipe
 
 import UIKit
+import FirebaseDatabase
 
 //The view controller of the page that displays your selected Heathy Plate with all of its details
 class RecipeViewController: UIViewController {
@@ -21,16 +22,18 @@ class RecipeViewController: UIViewController {
     // recipe button, and text view objects
     @IBOutlet weak var recipe_button: UIButton!
     @IBOutlet weak var ingredients_list: UITextView!
+    @IBOutlet var btnSave: UIButton!
     
     // opens safari with link if button is clicked
     @IBAction func recipe_URL(_ sender: Any) {
         UIApplication.shared.open(URL(string: recipe_URL)!)
     }
-
+    
     // recipe name, ingredients, and URL link
     var recipe:String = ""
     var ingredients = [String]()
     var recipe_URL:String = ""
+    let rootRef = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +43,8 @@ class RecipeViewController: UIViewController {
         print("Final")
         print("Recipe", recipe)
         print("ingredients", ingredients)
+        
+        
         
         // sets the button title
         recipe_button.setTitle(recipe, for: .normal)
@@ -54,7 +59,11 @@ class RecipeViewController: UIViewController {
         
         //Display the list of ingredients
         ingredients_list.text = str_ingredients
-        
     }
+    
+    @IBAction func btnSave(_ sender: Any) {
+        btnSave.isHidden = true
+        rootRef.child("user").childByAutoId().setValue([recipe, Shared.shared.selected_cuisine])
 
+    }
 }

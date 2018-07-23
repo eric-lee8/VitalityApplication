@@ -11,19 +11,22 @@
 
 
 import UIKit
+import FirebaseDatabase
 
 class ViewController: UIViewController {
+
+    var databaseHandle:DatabaseHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        databaseHandle = Database.database().reference().child("user").observe(.childAdded, with: { (snapshot) in
+            let database_recipe = snapshot.value as? [String]
+            if let data = database_recipe {
+                Shared.shared.recipe_database.append(data)
+            }
+        })
+        
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
 

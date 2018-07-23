@@ -10,6 +10,7 @@ final class Shared {
     static let shared = Shared()
     
     // variables that all view controllers can access
+    var recipe_database = [[String]]()
     var selected_cuisine:String!
     var veg_selected_ingredients = [String]()
     var meat_selected_ingredients = [String]()

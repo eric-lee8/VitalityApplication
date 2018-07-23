@@ -93,6 +93,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     func get_recipes() -> [Recipe] {
         if let path = Bundle.main.path(forResource: cuisine, ofType: "json") {
             let url = URL(fileURLWithPath: path)
+            print(url)
             do {
                 let data = try Data(contentsOf: url, options: .mappedIfSafe)
                 let decoder = JSONDecoder()

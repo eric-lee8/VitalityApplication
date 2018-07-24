@@ -134,20 +134,25 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
             recipe_chosen = output[indexPath.row]
             
-            for recipe in get_recipes() {
-                if (recipe_chosen == recipe.name) {
-                    for ingredient in recipe.ingredients {
-                        recipe_ingredients.append(ingredient.name)
-                    }
-                    recipe_URL = recipe.url
-                }
-            }
+
         }
         
         if ( recipe_chosen.isEmpty != true ) {
             btnCreate.isHidden = false
         }
         
+    }
+    @IBAction func btnCreate(_ sender: Any) {
+        recipe_ingredients = [String]()
+        
+        for recipe in get_recipes() {
+            if (recipe_chosen == recipe.name) {
+                for ingredient in recipe.ingredients {
+                    recipe_ingredients.append(ingredient.name)
+                }
+                recipe_URL = recipe.url
+            }
+        }
     }
     
     // creates the cells 

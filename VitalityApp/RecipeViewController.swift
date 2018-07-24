@@ -44,14 +44,10 @@ class RecipeViewController: UIViewController {
         print("Recipe", recipe)
         print("ingredients", ingredients)
         
-        
-        
         // sets the button title
         recipe_button.setTitle(recipe, for: .normal)
         
         var str_ingredients = String()
-        str_ingredients = "List of Ingredients : \n"
-        
         
         for ingredient in ingredients {
             str_ingredients += ingredient + "\n"
@@ -66,4 +62,9 @@ class RecipeViewController: UIViewController {
         rootRef.child("user").childByAutoId().setValue([recipe, Shared.shared.selected_cuisine])
 
     }
+    
+    @IBAction func btnHome(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

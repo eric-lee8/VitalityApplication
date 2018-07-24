@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print("Application did finish launching")
         FirebaseApp.configure()
+        
         return true
     }
 

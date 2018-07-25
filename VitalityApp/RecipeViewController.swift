@@ -59,7 +59,7 @@ class RecipeViewController: UIViewController {
     
     @IBAction func btnSave(_ sender: Any) {
         btnSave.isHidden = true
-        rootRef.child("user").childByAutoId().setValue([recipe, Shared.shared.selected_cuisine])
+        rootRef.child("user").child(recipe).setValue([recipe, Shared.shared.selected_cuisine])
 
     }
     

@@ -88,6 +88,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         historyRecipeViewController.recipe = recipe_chosen
         historyRecipeViewController.ingredients = recipe_ingredients
         historyRecipeViewController.recipe_URL = recipe_URL
+        historyRecipeViewController.cuisine = cuisine
         
         print(recipe_chosen)
         //print(recipe_ingredients)

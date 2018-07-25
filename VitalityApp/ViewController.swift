@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            print("hello")
             databaseHandle = Database.database().reference().child("user").observe(.childAdded, with: { (snapshot) in
             let database_recipe = snapshot.value as? [String]
             let data = database_recipe

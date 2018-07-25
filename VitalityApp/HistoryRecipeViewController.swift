@@ -56,7 +56,7 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
                     }
                     DispatchQueue.main.async {
                         self.recipeImageView?.image = UIImage(data: data!)
-                        self.btnUpload.isHidden = true
+                        self.btnUpload.setTitle("", for: .normal)
                     }
 
                 }.resume()
@@ -90,6 +90,7 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
         }
         if let selectedImage = selectedImageFromPicker {
             recipeImageView.image = selectedImage
+            btnUpload.setTitle("", for: .normal)
         }
         if let uploadData = UIImagePNGRepresentation(recipeImageView.image!) {
             storageRef.putData(uploadData, metadata: nil) { (metadata, error) in
@@ -120,7 +121,6 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     @IBAction func btnURL(_ sender: Any) {
         UIApplication.shared.open(URL(string: recipe_URL)!)
     }
-    
     
     @IBAction func btnHome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)

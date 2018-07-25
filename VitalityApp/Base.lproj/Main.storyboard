@@ -735,7 +735,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFR-UE-Sm1">
                                 <rect key="frame" x="28" y="64" width="318" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Upload Image of Recipe"/>
                                 <connections>
                                     <action selector="recipeImageBtn:" destination="tjG-GH-X8N" eventType="touchUpInside" id="mLi-C2-fiz"/>

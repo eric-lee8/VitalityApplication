@@ -29,14 +29,13 @@ class CuisineViewController: UIViewController {
         btnSelect.layer.borderColor = UIColor.lightGray.cgColor
         
         // assigns cuisine label
-        let cn : String = Shared.shared.selected_cuisine ?? "---------"
-        btnSelect.setTitle(cn,for: .normal)
+        Shared.shared.selected_cuisine = "---------"
         
     }
     
     // After returning back to view controller with selected cuisine, change the label of the button to the cuisine name, and display the next button 
     override func viewWillAppear(_ animated: Bool) {
-        if (Shared.shared.selected_cuisine != nil) {
+        if (Shared.shared.selected_cuisine != "---------") {
             btnnext.isHidden = false
             btnSelect.setTitle(Shared.shared.selected_cuisine, for: .normal)
         }

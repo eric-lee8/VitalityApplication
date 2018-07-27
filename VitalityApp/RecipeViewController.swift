@@ -37,12 +37,20 @@ class RecipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let reachability = Reachability.init()
+
         print("Recipe View Controller")
 
         //For testing purposes
         print("Final")
         print("Recipe", recipe)
         print("ingredients", ingredients)
+        
+
+        if (UserDefaults.standard.object(forKey: "username") == nil || reachability?.connection == .none) {
+            btnSave.isHidden = true
+        }
         
         // sets the button title
         recipe_button.setTitle(recipe, for: .normal)
@@ -58,13 +66,23 @@ class RecipeViewController: UIViewController {
     }
     
     @IBAction func btnSave(_ sender: Any) {
+
         btnSave.isHidden = true
-        rootRef.child("user").child(recipe).setValue([recipe, Shared.shared.selected_cuisine])
+        rootRef.child((UserDefaults.standard.object(forKey: "username") as? String)!).child(recipe).setValue([recipe, Shared.shared.selected_cuisine])
 
     }
     
     @IBAction func btnHome(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
+    }
+    
+    func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

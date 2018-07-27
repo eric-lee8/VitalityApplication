@@ -25,6 +25,8 @@
 		AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9195020E776AB00281430 /* LaunchScreen.storyboard */; };
 		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
 		E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E454F6F22104544F00B63F74 /* GoogleService-Info.plist */; };
+		E456BBC8210AC2E7008BA259 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC7210AC2E7008BA259 /* LoginViewController.swift */; };
+		E456BBCA210AF292008BA259 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC9210AF292008BA259 /* Reachability.swift */; };
 		E4854D2B2106E36000C08ADC /* HistoryRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */; };
 		E4854D2F2106F6F300C08ADC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */; };
 		E486537120FC0729000E584E /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537020FC0729000E584E /* Chinese.json */; };
@@ -59,6 +61,8 @@
 		AEA9195320E776AB00281430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		E454F6F22104544F00B63F74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E456BBC7210AC2E7008BA259 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E456BBC9210AF292008BA259 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecipeViewController.swift; sourceTree = "<group>"; };
 		E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E486537020FC0729000E584E /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			children = (
 				AEA9194720E776AB00281430 /* AppDelegate.swift */,
 				AEA9194920E776AB00281430 /* ViewController.swift */,
+				E456BBC7210AC2E7008BA259 /* LoginViewController.swift */,
 				AEA9194B20E776AB00281430 /* Main.storyboard */,
 				E43B060520FC325D0052A883 /* IngredientViewController.swift */,
 				AE5A385920F5C8FA0096281B /* SelectionViewController.swift */,
@@ -138,6 +143,7 @@
 				AE5A385520F58CA00096281B /* Shared.swift */,
 				716CF2FE20ECA73700758692 /* Ingredient.swift */,
 				716CF30020ECA76C00758692 /* Recipe.swift */,
+				E456BBC9210AF292008BA259 /* Reachability.swift */,
 				E454F6F22104544F00B63F74 /* GoogleService-Info.plist */,
 			);
 			path = VitalityApp;
@@ -279,6 +285,7 @@
 				E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */,
 				AE5A385820F58EB50096281B /* VegPopOverViewController.swift in Sources */,
 				E4AAB7FF20EA94BB0008B872 /* Model.xcdatamodeld in Sources */,
+				E456BBC8210AC2E7008BA259 /* LoginViewController.swift in Sources */,
 				AEA9194A20E776AB00281430 /* ViewController.swift in Sources */,
 				716CF2FF20ECA73700758692 /* Ingredient.swift in Sources */,
 				AE5A385620F58CA00096281B /* Shared.swift in Sources */,
@@ -292,6 +299,7 @@
 				AE12991520FC0A250008EB53 /* MeatPopOverViewController.swift in Sources */,
 				E4854D2F2106F6F300C08ADC /* HistoryViewController.swift in Sources */,
 				716CF30120ECA76C00758692 /* Recipe.swift in Sources */,
+				E456BBCA210AF292008BA259 /* Reachability.swift in Sources */,
 				AE5A385A20F5C8FA0096281B /* SelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBNYPX5536;
 				INFOPLIST_FILE = VitalityApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -453,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YBNYPX5536;
 				INFOPLIST_FILE = VitalityApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -39,8 +39,7 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
         //Display the list of ingredients
         ingredients_list.text = str_ingredients
         
-        
-        databaseHandle = Database.database().reference().child("user").observe(.childAdded, with: { (snapshot) in
+        databaseHandle = Database.database().reference().child((UserDefaults.standard.object(forKey: "username") as? String)!).observe(.childAdded, with: { (snapshot) in
             let database_recipe = snapshot.value as? [String]
             let data = database_recipe
             
@@ -101,9 +100,7 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
                 print("uploaded")
                 
                 storageRef.downloadURL(completion: { (url, error) in
-                    
-                    rootRef.child("user").child(self.recipe).setValue([self.recipe, self.cuisine,  url!.absoluteString])
-
+                    rootRef.child((UserDefaults.standard.object(forKey: "username") as? String)!).child(self.recipe).setValue([self.recipe, self.cuisine,  url!.absoluteString])
                 })
                 
             }

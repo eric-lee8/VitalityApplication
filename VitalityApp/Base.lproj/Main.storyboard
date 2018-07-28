@@ -787,6 +787,31 @@
             </objects>
             <point key="canvasLocation" x="5484" y="842"/>
         </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="tLQ-tl-n68">
+            <objects>
+                <viewController id="vle-aM-wLM" customClass="ChartViewController" customModule="VitalityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kb5-Cm-zh3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fs9-ct-ugu" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qgx-rK-p0J"/>
+                    </view>
+                    <connections>
+                        <outlet property="pieChart" destination="Fs9-ct-ugu" id="Fv8-a4-eFu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3We-hD-r2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381.60000000000002" y="2298.8005997001501"/>
+        </scene>
         <!--History Recipe View Controller-->
         <scene sceneID="mRL-4j-cZV">
             <objects>
@@ -903,6 +928,19 @@
                                 <connections>
                                     <action selector="btnConfirmAction:" destination="R7e-9a-bpy" eventType="touchUpInside" id="RLI-GH-xRK"/>
                                     <segue destination="tjG-GH-X8N" kind="show" id="yhz-9C-Twj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2d-OI-5Rv">
+                                <rect key="frame" x="16" y="615" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Analytics"/>
+                                <connections>
+                                    <action selector="analyzeBtn:" destination="R7e-9a-bpy" eventType="touchUpInside" id="xSx-kY-rrK"/>
+                                    <action selector="btnHome:" destination="0oa-zc-LHW" eventType="touchUpInside" id="FoV-nU-ji3"/>
+                                    <action selector="btnHome:" destination="tjG-GH-X8N" eventType="touchUpInside" id="Nre-nG-baF"/>
+                                    <action selector="btnSave:" destination="0oa-zc-LHW" eventType="touchUpInside" id="q8c-tD-7Wr"/>
+                                    <segue destination="vle-aM-wLM" kind="show" id="8Ua-qc-70r"/>
                                 </connections>
                             </button>
                         </subviews>

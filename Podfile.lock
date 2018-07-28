@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
   - Firebase/Core (5.4.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.0.1)
@@ -37,12 +40,14 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - Charts
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Charts
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -55,6 +60,7 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
@@ -66,6 +72,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: fee56f580634fabd75a1ec65f9f0a753388e0f9f
+PODFILE CHECKSUM: 8d161bf6e6218555d684a97747096f20e11ca5e3
 
 COCOAPODS: 1.5.3

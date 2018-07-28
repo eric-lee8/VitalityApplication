@@ -1,6 +1,9 @@
  [{
   "name": "Moo Shu vegetables",
   "url": "http://www.google.ca",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "mung bean",
                   "amount": "1",
@@ -25,6 +28,9 @@
   {
   "name": "Sesame noodles with baked tofu",
   "url": "http://www.google.ca",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "tofu",
                   "amount": "1",
@@ -48,6 +54,9 @@
   },{
   "name": "Tofu cucumber salad",
   "url": "http://www.google.ca",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "tofu",
                   "amount": "1",
@@ -71,6 +80,9 @@
   }, {
   "name": "Kung pao broccoli",
   "url": "http://www.google.ca",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "broccoli",
                   "amount": "1",
@@ -89,6 +101,9 @@
   }, {
   "name": "Spicy pork & green bean stir-fry",
   "url": "http://www.google.ca",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "pork",
                   "amount": "1",

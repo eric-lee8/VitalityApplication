@@ -16,10 +16,17 @@ struct Recipe : Decodable {
     let url : String
     let ingredients : [Ingredient]
     
-    init(name : String, url: String, ingredients : [Ingredient]) {
+    let Veggie_Weight : String
+    let Grain_Weight : String
+    let Meat_Weight : String
+    
+    init(name : String, url: String, ingredients : [Ingredient], Veggie_Weight : String, Grain_Weight : String, Meat_Weight : String) {
         self.name = name
         self.url = url
         self.ingredients = ingredients
+        self.Veggie_Weight = Veggie_Weight
+        self.Grain_Weight = Grain_Weight
+        self.Meat_Weight = Meat_Weight
     }
     
     public var description: String { return name }

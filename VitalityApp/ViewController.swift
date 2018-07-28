@@ -71,6 +71,14 @@ class ViewController: UIViewController {
         Shared.shared.grain_selected_ingredients = [String]()
         Shared.shared.dairy_selected_ingredients = [String]()
         Shared.shared.recipe_database = [[String]]()
+        Shared.shared.recipe_chosen = nil
+        Shared.shared.recipe_ingredients = [String]()
+        Shared.shared.recipe_URL = nil
+        Shared.shared.recipe_database = [[String]]()
+        Shared.shared.veg_weight_total = 0
+        Shared.shared.grain_weight_total = 0
+        Shared.shared.meat_weight_total  = 0
+        
         
         if (UserDefaults.standard.object(forKey: "username") != nil) {
             databaseHandle = Database.database().reference().child((UserDefaults.standard.object(forKey: "username") as? String)!).observe(.childAdded, with: { (snapshot) in

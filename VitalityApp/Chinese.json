@@ -1,6 +1,9 @@
  [{
   "name": "Chinese Bean Sprout Salad",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-bean-sprout-salad.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Bean - Sprouts",
                   "amount": "1",
@@ -25,6 +28,9 @@
   {
   "name": "Beef and Broccoli",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-beef-broccoli.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Beef",
                   "amount": "1/4",
@@ -49,6 +55,9 @@
   {
   "name": "Stir Fried Chicken",
   "url": "http://www.worldfoodrecipes.com/recipe-of-stir-fried-chicken.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chicken",
                   "amount": "1/4",
@@ -83,6 +92,9 @@
   {
   "name": "Chinese Fried Rice",
   "url": "http://www.worldfoodrecipes.com/worldfoodrecipes/food-recipes/chinese-recipes/page/2",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Rice - Jasmine",
                   "amount": "4",
@@ -117,6 +129,9 @@
   {
   "name": "Hunan Lamb",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-hunan-lamb.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Lamb - Flank",
                   "amount": "3/4",
@@ -146,6 +161,9 @@
   {
   "name": "Moo Goo Gai Pan",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-moo-goo-gai-pan.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chicken - Breast",
                   "amount": "4",
@@ -180,6 +198,9 @@
   {
   "name": "Hunan Chili Chicken",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-hunan-chili-chicken.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chciken",
                   "amount": "1",
@@ -218,6 +239,9 @@
   {
   "name": "Shrimp and Noodle Stir Fry",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-shrimp-and-noodle-stir-fry.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Shrimp",
                   "amount": "1",
@@ -251,6 +275,9 @@
   {
   "name": "Chinese Chicken with Cashew Nuts",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-chicken-with-cashew-nuts.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chciken",
                   "amount": "250",
@@ -290,6 +317,9 @@
   {
   "name": "General Tsao's Chicken",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-general-tsaos-chicken.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Starch - Corn",
                   "amount": "1.5",
@@ -329,6 +359,9 @@
   {
   "name": "Kung Pao Chicken",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-kung-pao-chicken.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chicken",
                   "amount": "1",
@@ -357,6 +390,9 @@
   },{
   "name": "Chinese Pasta Salad",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-pasta-salad.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Pea - Snow",
                   "amount": "1.5",
@@ -400,6 +436,9 @@
   },{
   "name": "Chinese Hunan Beef",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-hunan-beef.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Broccoli",
                   "amount": "2",
@@ -428,6 +467,9 @@
   },{
   "name": "Shrimp with Snow Peas",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-shrimp-with-snow-peas.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Shrimp",
                   "amount": "2/3",
@@ -456,6 +498,9 @@
   },{
   "name": "Lo Mein",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-lo-mein.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Noodle - Chinese",
                   "amount": "4",
@@ -494,6 +539,9 @@
   },{
   "name": "Sichuan Style Stir-Fired Chinese Long Beans",
   "url": "https://www.simplyrecipes.com/recipes/sichuan_style_stir-fried_chinese_long_beans/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Bean - Chinese Long",
                   "amount": "1/2",
@@ -512,6 +560,9 @@
   },{
   "name": "Sichuan Eggplant",
   "url": "https://www.simplyrecipes.com/recipes/sichuan_eggplant/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Eggplant - Asian",
                   "amount": "1.5",
@@ -555,6 +606,9 @@
   },{
   "name": "Hot Sour Soup",
   "url": "https://www.simplyrecipes.com/recipes/hot_and_sour_soup/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Mushroom - Chinese Black Fungus",
                   "amount": "6",
@@ -603,6 +657,9 @@
   },{
   "name": "Sweet and Sour Chicken",
   "url": "https://www.simplyrecipes.com/recipes/sweet_and_sour_chicken/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chicken",
                   "amount": "1",
@@ -641,6 +698,9 @@
   },{
   "name": "Chicken Lettuce Wrap",
   "url": "https://www.simplyrecipes.com/recipes/pressure_cooker_chicken_lettuce_wraps/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Nuts - Peanut",
                   "amount": "1/4",
@@ -699,6 +759,9 @@
   },{
   "name": "Flank Steak Stir-fry with Asparagus and Red Pepper",
   "url": "https://www.simplyrecipes.com/recipes/flank_steak_stir_fry_with_asparagus_and_red_pepper/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Asparagus",
                   "amount": "1/2",
@@ -737,6 +800,9 @@
   },{
   "name": "Egg-drop Soup",
   "url": "https://www.simplyrecipes.com/recipes/egg_drop_soup/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Egg",
                   "amount": "3",
@@ -765,6 +831,9 @@
   },{
   "name": "Stir-fried Green Beans with Ginger and Onions",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-hunan-lamb.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Bean - Green",
                   "amount": "3/4",
@@ -788,6 +857,9 @@
   },{
   "name": "Mushroom Stir-fry with Peas and Green Onions",
   "url": "https://www.simplyrecipes.com/recipes/sweet_and_spicy_mushroom_stir_fry/",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Chicken Stock",
                   "amount": "0.75",
@@ -846,6 +918,9 @@
   },{
   "name": "Chinese Chicken Salad",
   "url": "http://www.worldfoodrecipes.com/recipe-of-chinese-chicken-salad.html",
+  "Veggie_Weight": "1",
+  "Grain_Weight": "2",
+  "Meat_Weight": "0.8",
   "ingredients": [{
                   "name": "Cabbage - Green",
                   "amount": "1",

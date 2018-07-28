@@ -32,7 +32,8 @@
 		E486537120FC0729000E584E /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537020FC0729000E584E /* Chinese.json */; };
 		E486537520FC1DF4000E584E /* Indian.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537420FC1DF4000E584E /* Indian.json */; };
 		E493E04620FEAC680036F83D /* Korean.json in Resources */ = {isa = PBXBuildFile; fileRef = E493E04520FEAC680036F83D /* Korean.json */; };
-		E493E04820FEAC7B0036F83D /* Japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = E493E04720FEAC7B0036F83D /* Japanese.json */; };
+		E49A0424210B07EC00F5D26D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A0423210B07EC00F5D26D /* ChartViewController.swift */; };
+		E49A0426210C0DD700F5D26D /* Japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = E49A0425210C0DD700F5D26D /* Japanese.json */; };
 		E49AF40520EC67A30042A167 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AF40420EC67A30042A167 /* RecipeViewController.swift */; };
 		E4AAB7BF20EA11E50008B872 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */; };
 		E4AAB7FF20EA94BB0008B872 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */; };
@@ -68,7 +69,8 @@
 		E486537020FC0729000E584E /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
 		E486537420FC1DF4000E584E /* Indian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Indian.json; sourceTree = "<group>"; };
 		E493E04520FEAC680036F83D /* Korean.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Korean.json; sourceTree = "<group>"; };
-		E493E04720FEAC7B0036F83D /* Japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Japanese.json; sourceTree = "<group>"; };
+		E49A0423210B07EC00F5D26D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		E49A0425210C0DD700F5D26D /* Japanese.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Japanese.json; path = ../../../Downloads/Japanese.json; sourceTree = "<group>"; };
 		E49AF40420EC67A30042A167 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		E4AAB7FE20EA94BB0008B872 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -130,12 +132,13 @@
 				AE12991220F9557D0008EB53 /* CuisinePopOverViewController.swift */,
 				E49AF40420EC67A30042A167 /* RecipeViewController.swift */,
 				E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */,
+				E49A0423210B07EC00F5D26D /* ChartViewController.swift */,
 				E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */,
 				E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */,
 				E486537020FC0729000E584E /* Chinese.json */,
 				E486537420FC1DF4000E584E /* Indian.json */,
 				E493E04520FEAC680036F83D /* Korean.json */,
-				E493E04720FEAC7B0036F83D /* Japanese.json */,
+				E49A0425210C0DD700F5D26D /* Japanese.json */,
 				E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */,
 				AEA9194E20E776AB00281430 /* Assets.xcassets */,
 				AEA9195020E776AB00281430 /* LaunchScreen.storyboard */,
@@ -222,10 +225,10 @@
 				E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */,
 				E493E04620FEAC680036F83D /* Korean.json in Resources */,
 				AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */,
+				E49A0426210C0DD700F5D26D /* Japanese.json in Resources */,
 				E486537120FC0729000E584E /* Chinese.json in Resources */,
 				AEA9194D20E776AB00281430 /* Main.storyboard in Resources */,
 				E486537520FC1DF4000E584E /* Indian.json in Resources */,
-				E493E04820FEAC7B0036F83D /* Japanese.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +260,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VitalityApp/Pods-VitalityApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -264,6 +268,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -289,6 +294,7 @@
 				AEA9194A20E776AB00281430 /* ViewController.swift in Sources */,
 				716CF2FF20ECA73700758692 /* Ingredient.swift in Sources */,
 				AE5A385620F58CA00096281B /* Shared.swift in Sources */,
+				E49A0424210B07EC00F5D26D /* ChartViewController.swift in Sources */,
 				AE12991120F955390008EB53 /* CuisineViewController.swift in Sources */,
 				AE12991320F9557D0008EB53 /* CuisinePopOverViewController.swift in Sources */,
 				AEA9194820E776AB00281430 /* AppDelegate.swift in Sources */,

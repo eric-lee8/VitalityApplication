@@ -17,10 +17,10 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet var ingredients_list: UITextView!
     @IBOutlet var btnUpload: UIButton!
     
-    var recipe:String = ""
-    var ingredients = [String]()
-    var recipe_URL:String = ""
-    var cuisine:String = ""
+    var recipe:String = Shared.shared.recipe_chosen
+    var ingredients = Shared.shared.recipe_ingredients
+    var recipe_URL:String = Shared.shared.recipe_URL
+    var cuisine:String = Shared.shared.selected_cuisine
     var imageURL:String = ""
     
     override func viewDidLoad() {

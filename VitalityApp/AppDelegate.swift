@@ -7,9 +7,7 @@
 // Team Vitality
 // Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
-//
-// File created by and worked on by Eric Joseph Lee
+// File created by and worked on by Jacky Huynh
 
 import UIKit
 import CoreData

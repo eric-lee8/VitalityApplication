@@ -2,46 +2,51 @@
 //  HistoryViewController.swift
 //  VitalityApp
 //
-//  Created by Jacky Huynh on 2018-07-23.
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
+// CMPT276
+// Project Group 16
+// Team Vitality
+// Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
+//  Created by Jacky Huynh on 2018-07-23.
+//
+
 
 import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-        
+    
+    // confirm button object
     @IBOutlet var btnconfirm: UIButton!
+    
+    // getting all the recipes saved in the database
     var recipes_list = Shared.shared.recipe_database
     
-    /*
-    var recipe_chosen:String = ""
-    var recipe_ingredients = [String]()
-    var cuisine:String = ""
-    var recipe_URL:String = ""
-    */
-    
+    // confirm button is initially hidden
     override func viewDidLoad() {
         btnconfirm.isHidden = true
         super.viewDidLoad()
 
     }
     
+    // Sets number of rows for the table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes_list.count
     }
     
+    // Creates the cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = recipes_list[indexPath.row][0]
         return cell
     }
     
-     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // detects when a cell in the table is selected, and assigns a checkmark to that cell, and removes all other checkmarks
+    // as well as assigning the chosen cell data to variables accordingly
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Shared.shared.recipe_chosen = recipes_list[indexPath.row][0]
         Shared.shared.selected_cuisine = recipes_list[indexPath.row][1]
         
         if (tableView.cellForRow(at: indexPath)?.accessoryType != UITableViewCellAccessoryType.checkmark)  {
-            
             for i in 0...recipes_list.count {
                 tableView.cellForRow(at: [0, i])?.accessoryType = UITableViewCellAccessoryType.none
             }
@@ -52,6 +57,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+    // if the confirm button is selected saves the recipe ingredients, and url to variables
     @IBAction func btnConfirmAction(_ sender: Any) {
         Shared.shared.recipe_ingredients = [String]()
         for recipe in get_recipes(cuisine: Shared.shared.selected_cuisine) {
@@ -64,9 +70,9 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
-    
+    // if analyze button is chosen, function grabs the weights of the recipes, and assigns them to variables
     @IBAction func analyzeBtn(_ sender: Any) {
-        let cuisines = ["Chinese"]
+        let cuisines = ["Japanese", "Chinese", "Thai"]
         for cuisine in cuisines {
             for recipe in get_recipes(cuisine: cuisine) {
                 for database_recipe in Shared.shared.recipe_database {
@@ -80,6 +86,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+    // function that searches the json files, and return recipes
     func get_recipes(cuisine:String) -> [Recipe] {
         if let path = Bundle.main.path(forResource: cuisine, ofType: "json") {
             let url = URL(fileURLWithPath: path)

@@ -26,18 +26,20 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     var meat_selected_ingredients = Shared.shared.meat_selected_ingredients
     var grain_selected_ingredients = Shared.shared.grain_selected_ingredients
     var dairy_selected_ingredients = Shared.shared.dairy_selected_ingredients
- 
     var cuisine = Shared.shared.selected_cuisine
+    
+    // variables to save data
     var recipe_URL:String = ""
     var recipe_chosen:String = ""
     var recipe_ingredients = [String]()
-    
     var output: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Output View Controller")
         btnCreate.isHidden = true
+        
+        //newRecipes()
         
         // adding user input to the item array to compare with the ingredients from each recipes in data
         //structure
@@ -64,7 +66,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         //comparing user selected ingredients with data structure ingredients
         var recipesToOverlapped:[(name: Recipe, value: Int)] = []
         
-        for recipe in get_recipes() {
+        for recipe in get_recipes(cuisine: cuisine!) {
             var overlapped = 0
             for item in items {
                 for ingredient in recipe.ingredients {
@@ -90,7 +92,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     
     // JSON file upload
     // goes to json file according the cuisine users have selected, which is assigned to the variable "cuisine"
-    func get_recipes() -> [Recipe] {
+    func get_recipes(cuisine: String) -> [Recipe] {
         if let path = Bundle.main.path(forResource: cuisine, ofType: "json") {
             let url = URL(fileURLWithPath: path)
             do {
@@ -102,11 +104,6 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         fatalError("Recipe.json does not exist")
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //TableView functions that displays the recipes
@@ -140,10 +137,12 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
     }
+    
+    // if useres press the create button then ingredients, and url of the recipe is saved
     @IBAction func btnCreate(_ sender: Any) {
         recipe_ingredients = [String]()
         
-        for recipe in get_recipes() {
+        for recipe in get_recipes(cuisine: cuisine!) {
             if (recipe_chosen == recipe.name) {
                 for ingredient in recipe.ingredients {
                     recipe_ingredients.append(ingredient.name)
@@ -161,6 +160,28 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         return(cell)
     }
     
+    /*
+    func newRecipes() {
+        let veg_ingredients: [String] = ["Asparagus", "Bamboo Shoots", "Basil", "Bean - Chinese Long", "Bean - Green", "Bean - Sprout", "Bok Choy", "Broccoli", "Cabbage - Green", "Cabbage - Napa", "Cabbage - Red", "Carrot", "Celery", "Cilantro", "Corn", "Corn - Baby", "Cucumber", "Eggplant - Asian", "Garlic", "Ginger", "Ginger Pickle", "Kale", "Lemon", "Lettuce - Butter", "Lettuce - Green", "Lime", "Mushroom - Chinese Black Fungus", "Mushroom - Crimini", "Mushroom - Enoki", "Mushroom - Oyster", "Mushroom - Shiitake",  "Mushroom - White", "Mushrooms - Mixed", "Nuts - Almond", "Nuts - Cashew", "Nuts - Peanut", "Onion - Green", "Onion - Medium", "Onion - Red", "Onion - White", "Pea", "Pea - Snap", "Pea - Snow", "Pepper - Chili", "Pepper - Dried Red Chili", "Pepper - Red Chili Powerder", "Pepper - Green Bell", "Pepper - Orange Bell", "Pepper - Red Bell", "Pepper - Yellow Bell", "Peppercorn - Sichuan", "Pineapple", "Radish", "Spanich", "Seaweed", "Sesame Seeds", "Squash - Zucchini", "Wakame", "Water Chestnut"]
+        let meat_ingredients: [String] = ["Beef", "Beef - Flank", "Beef - Ripeye", "Chicken", "Chicken - Breast", "Chicken - Thigh", "Crab", "Crab - Imitation", "Egg", "Lamb - Flank", "Pork", "Shrimp", "Tofu"]
+        let grain_ingredients: [String] = ["Starch - Corn", "Flour", "Flour - Corn","Noodle - Ramen", "Noodle - Chinese",  "Noodle - Stir Fry", "Noodle - Shirataki", "Noodle - Soba", "Noodle - Yakisoba", "Rice - Calrose", "Rice - Jasmine", "Rice - Brown", "bread", "Vermicelli - Rice", "quinoa"]
+        let dairy_ingredients: [String] = ["Butter", "Cream", "Cheese", "Milk", "Soy Milk", "Yogourt"]
+        
+        var new_ingredients = [String]()
+        
+        for cuisine in ["Chinese", "Japanese", "Thai"] {
+            print(cuisine)
+            for recipe in get_recipes(cuisine: cuisine) {
+                for ingredient in recipe.ingredients {
+                    if ( !veg_ingredients.contains(ingredient.name) && !meat_ingredients.contains(ingredient.name) && !grain_ingredients.contains(ingredient.name) && !dairy_ingredients.contains(ingredient.name)) {
+                        new_ingredients.append(ingredient.name)
+                    }
+                }
+            }
+        }
+        print(new_ingredients)
+    }
+     */
     // sending data to the next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let recipeViewController = segue.destination as! RecipeViewController
@@ -168,6 +189,6 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         recipeViewController.ingredients = recipe_ingredients
         recipeViewController.recipe_URL = recipe_URL
     }
-    
+ 
 }
 

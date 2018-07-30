@@ -17,9 +17,11 @@ class ViewController: UIViewController {
     
     var databaseHandle:DatabaseHandle?
     
+    // objects buttons on viewcontroller
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var logoutBtnLabel: UIButton!
     
+    //logout button action function
     @IBAction func logoutBtnAction(_ sender: Any) {
         UserDefaults.standard.set(nil, forKey: "username")
         loginBtn.setTitle("Login", for: .normal)
@@ -28,11 +30,12 @@ class ViewController: UIViewController {
     
     @IBAction func historyBtn(_ sender: Any) {
         
+        // tests if users have a internet connection, if not create an alert telling
         let reachability = Reachability.init()
-        
         if (reachability?.connection == .none) {
             createAlert(title: "Internet Connect Required For History", message: "Please Connect to Wifi")
         }
+        // if users are not logged in then create an alert telling them
         else if (UserDefaults.standard.object(forKey: "username") == nil ) {
             createAlert(title: "Login is Required", message: "Please Login")
         }
@@ -41,6 +44,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // checks if users have a saved username, if they do then fetch their saved recipes and save it to a variable in the shared file
         if (UserDefaults.standard.object(forKey: "username") != nil) {
             databaseHandle = Database.database().reference().child((UserDefaults.standard.object(forKey: "username") as? String)!).observe(.childAdded, with: { (snapshot) in
                 let database_recipe = snapshot.value as? [String]
@@ -50,21 +54,22 @@ class ViewController: UIViewController {
                 }
             })
         }
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        // if users have a saved username then the login button is the users username, and make the logout button visible
         if let user = UserDefaults.standard.object(forKey: "username") as? String {
             logoutBtnLabel.isHidden = false
             logoutBtnLabel.setTitle("Logout", for: .normal)
             loginBtn.setTitle(user, for: .normal)
         }
+        // otherwise make the logout button hidden, and the login button "Login"
         else {
             logoutBtnLabel.isHidden = true
             loginBtn.setTitle("Login", for: .normal)
         }
  
+        // resets all shared file variables when revisiting this viewcontroller
         Shared.shared.selected_cuisine = "---------"
         Shared.shared.veg_selected_ingredients = [String]()
         Shared.shared.meat_selected_ingredients = [String]()
@@ -79,7 +84,7 @@ class ViewController: UIViewController {
         Shared.shared.grain_weight_total = 0
         Shared.shared.meat_weight_total  = 0
         
-        
+        // if users are logged in then grab all their saved recipes from the database and save recipe_database in the shared file
         if (UserDefaults.standard.object(forKey: "username") != nil) {
             databaseHandle = Database.database().reference().child((UserDefaults.standard.object(forKey: "username") as? String)!).observe(.childAdded, with: { (snapshot) in
                 let database_recipe = snapshot.value as? [String]
@@ -93,6 +98,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // function that can be called to create alerts
     func createAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: { (action) in

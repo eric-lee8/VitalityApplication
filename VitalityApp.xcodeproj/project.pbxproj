@@ -23,17 +23,16 @@
 		AEA9194D20E776AB00281430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194B20E776AB00281430 /* Main.storyboard */; };
 		AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA9194E20E776AB00281430 /* Assets.xcassets */; };
 		AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA9195020E776AB00281430 /* LaunchScreen.storyboard */; };
+		E41ABE3E210C51D10043A5D6 /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE3D210C51D10043A5D6 /* Chinese.json */; };
+		E41ABE40210C527C0043A5D6 /* Japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE3F210C527C0043A5D6 /* Japanese.json */; };
+		E41ABE42210C52A80043A5D6 /* Thai.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE41210C52A80043A5D6 /* Thai.json */; };
 		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
 		E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E454F6F22104544F00B63F74 /* GoogleService-Info.plist */; };
 		E456BBC8210AC2E7008BA259 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC7210AC2E7008BA259 /* LoginViewController.swift */; };
 		E456BBCA210AF292008BA259 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC9210AF292008BA259 /* Reachability.swift */; };
 		E4854D2B2106E36000C08ADC /* HistoryRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */; };
 		E4854D2F2106F6F300C08ADC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */; };
-		E486537120FC0729000E584E /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537020FC0729000E584E /* Chinese.json */; };
-		E486537520FC1DF4000E584E /* Indian.json in Resources */ = {isa = PBXBuildFile; fileRef = E486537420FC1DF4000E584E /* Indian.json */; };
-		E493E04620FEAC680036F83D /* Korean.json in Resources */ = {isa = PBXBuildFile; fileRef = E493E04520FEAC680036F83D /* Korean.json */; };
 		E49A0424210B07EC00F5D26D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A0423210B07EC00F5D26D /* ChartViewController.swift */; };
-		E49A0426210C0DD700F5D26D /* Japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = E49A0425210C0DD700F5D26D /* Japanese.json */; };
 		E49AF40520EC67A30042A167 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AF40420EC67A30042A167 /* RecipeViewController.swift */; };
 		E4AAB7BF20EA11E50008B872 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */; };
 		E4AAB7FF20EA94BB0008B872 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */; };
@@ -51,8 +50,8 @@
 		AE12991620FC0A360008EB53 /* GrainPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainPopOverViewController.swift; sourceTree = "<group>"; };
 		AE12991820FC0A450008EB53 /* DairyPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DairyPopOverViewController.swift; sourceTree = "<group>"; };
 		AE5A385520F58CA00096281B /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
-		AE5A385720F58EB50096281B /* VegPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegPopOverViewController.swift; sourceTree = SOURCE_ROOT; };
-		AE5A385920F5C8FA0096281B /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		AE5A385720F58EB50096281B /* VegPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VegPopOverViewController.swift; path = VitalityApp/ViewControllers/VegPopOverViewController.swift; sourceTree = SOURCE_ROOT; };
+		AE5A385920F5C8FA0096281B /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectionViewController.swift; path = VitalityApp/ViewControllers/SelectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		AEA9194420E776AB00281430 /* VitalityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VitalityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA9194720E776AB00281430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA9194920E776AB00281430 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,17 +59,16 @@
 		AEA9194E20E776AB00281430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA9195120E776AB00281430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA9195320E776AB00281430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41ABE3D210C51D10043A5D6 /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
+		E41ABE3F210C527C0043A5D6 /* Japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Japanese.json; sourceTree = "<group>"; };
+		E41ABE41210C52A80043A5D6 /* Thai.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Thai.json; sourceTree = "<group>"; };
 		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		E454F6F22104544F00B63F74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E456BBC7210AC2E7008BA259 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E456BBC9210AF292008BA259 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecipeViewController.swift; sourceTree = "<group>"; };
 		E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		E486537020FC0729000E584E /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
-		E486537420FC1DF4000E584E /* Indian.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Indian.json; sourceTree = "<group>"; };
-		E493E04520FEAC680036F83D /* Korean.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Korean.json; sourceTree = "<group>"; };
 		E49A0423210B07EC00F5D26D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
-		E49A0425210C0DD700F5D26D /* Japanese.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Japanese.json; path = ../../../Downloads/Japanese.json; sourceTree = "<group>"; };
 		E49AF40420EC67A30042A167 /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		E4AAB7FE20EA94BB0008B872 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -118,36 +116,16 @@
 		AEA9194620E776AB00281430 /* VitalityApp */ = {
 			isa = PBXGroup;
 			children = (
-				AEA9194720E776AB00281430 /* AppDelegate.swift */,
-				AEA9194920E776AB00281430 /* ViewController.swift */,
-				E456BBC7210AC2E7008BA259 /* LoginViewController.swift */,
 				AEA9194B20E776AB00281430 /* Main.storyboard */,
-				E43B060520FC325D0052A883 /* IngredientViewController.swift */,
-				AE5A385920F5C8FA0096281B /* SelectionViewController.swift */,
-				AE5A385720F58EB50096281B /* VegPopOverViewController.swift */,
-				AE12991420FC0A250008EB53 /* MeatPopOverViewController.swift */,
-				AE12991620FC0A360008EB53 /* GrainPopOverViewController.swift */,
-				AE12991820FC0A450008EB53 /* DairyPopOverViewController.swift */,
-				AE12991020F955390008EB53 /* CuisineViewController.swift */,
-				AE12991220F9557D0008EB53 /* CuisinePopOverViewController.swift */,
-				E49AF40420EC67A30042A167 /* RecipeViewController.swift */,
-				E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */,
-				E49A0423210B07EC00F5D26D /* ChartViewController.swift */,
-				E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */,
-				E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */,
-				E486537020FC0729000E584E /* Chinese.json */,
-				E486537420FC1DF4000E584E /* Indian.json */,
-				E493E04520FEAC680036F83D /* Korean.json */,
-				E49A0425210C0DD700F5D26D /* Japanese.json */,
-				E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */,
-				AEA9194E20E776AB00281430 /* Assets.xcassets */,
+				AEA9194720E776AB00281430 /* AppDelegate.swift */,
+				E41ABE43210EC6BE0043A5D6 /* ViewControllers */,
+				E41ABE46210EC76A0043A5D6 /* swiftFiles */,
+				E41ABE45210EC7260043A5D6 /* jsonFiles */,
+				E454F6F22104544F00B63F74 /* GoogleService-Info.plist */,
 				AEA9195020E776AB00281430 /* LaunchScreen.storyboard */,
 				AEA9195320E776AB00281430 /* Info.plist */,
-				AE5A385520F58CA00096281B /* Shared.swift */,
-				716CF2FE20ECA73700758692 /* Ingredient.swift */,
-				716CF30020ECA76C00758692 /* Recipe.swift */,
-				E456BBC9210AF292008BA259 /* Reachability.swift */,
-				E454F6F22104544F00B63F74 /* GoogleService-Info.plist */,
+				E4AAB7FD20EA94BB0008B872 /* Model.xcdatamodeld */,
+				AEA9194E20E776AB00281430 /* Assets.xcassets */,
 			);
 			path = VitalityApp;
 			sourceTree = "<group>";
@@ -158,6 +136,49 @@
 				71DAFAA909326D1C53693384 /* Pods_VitalityApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41ABE43210EC6BE0043A5D6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA9194920E776AB00281430 /* ViewController.swift */,
+				E456BBC7210AC2E7008BA259 /* LoginViewController.swift */,
+				E43B060520FC325D0052A883 /* IngredientViewController.swift */,
+				AE5A385920F5C8FA0096281B /* SelectionViewController.swift */,
+				AE5A385720F58EB50096281B /* VegPopOverViewController.swift */,
+				AE12991420FC0A250008EB53 /* MeatPopOverViewController.swift */,
+				AE12991620FC0A360008EB53 /* GrainPopOverViewController.swift */,
+				AE12991820FC0A450008EB53 /* DairyPopOverViewController.swift */,
+				AE12991020F955390008EB53 /* CuisineViewController.swift */,
+				AE12991220F9557D0008EB53 /* CuisinePopOverViewController.swift */,
+				E49AF40420EC67A30042A167 /* RecipeViewController.swift */,
+				E4AAB7BE20EA11E50008B872 /* OutputViewController.swift */,
+				E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */,
+				E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */,
+				E49A0423210B07EC00F5D26D /* ChartViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E41ABE45210EC7260043A5D6 /* jsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E41ABE3D210C51D10043A5D6 /* Chinese.json */,
+				E41ABE3F210C527C0043A5D6 /* Japanese.json */,
+				E41ABE41210C52A80043A5D6 /* Thai.json */,
+			);
+			path = jsonFiles;
+			sourceTree = "<group>";
+		};
+		E41ABE46210EC76A0043A5D6 /* swiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A385520F58CA00096281B /* Shared.swift */,
+				716CF2FE20ECA73700758692 /* Ingredient.swift */,
+				716CF30020ECA76C00758692 /* Recipe.swift */,
+				E456BBC9210AF292008BA259 /* Reachability.swift */,
+			);
+			path = swiftFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +244,11 @@
 			files = (
 				AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */,
 				E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */,
-				E493E04620FEAC680036F83D /* Korean.json in Resources */,
+				E41ABE40210C527C0043A5D6 /* Japanese.json in Resources */,
+				E41ABE42210C52A80043A5D6 /* Thai.json in Resources */,
+				E41ABE3E210C51D10043A5D6 /* Chinese.json in Resources */,
 				AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */,
-				E49A0426210C0DD700F5D26D /* Japanese.json in Resources */,
-				E486537120FC0729000E584E /* Chinese.json in Resources */,
 				AEA9194D20E776AB00281430 /* Main.storyboard in Resources */,
-				E486537520FC1DF4000E584E /* Indian.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

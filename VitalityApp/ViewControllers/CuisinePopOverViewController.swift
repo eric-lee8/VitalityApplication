@@ -18,7 +18,7 @@ class CuisinePopOverViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var tableView: UITableView!
     
     // cuisines that can be selected
-    var cuisines: [String] = ["Chinese", "Korean", "Japanese", "Indian"]
+    var cuisines: [String] = ["Chinese", "Japanese", "Thai"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,12 +32,10 @@ class CuisinePopOverViewController: UIViewController, UITableViewDelegate, UITab
         
     }
     
-    
     // Returns count of items in tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.cuisines.count;
     }
-    
     
     // Detects the selection of cells, if a cell is selected dismiss the viewcontroller, and update the shared file 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

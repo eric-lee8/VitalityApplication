@@ -4,6 +4,7 @@
   "Veggie_Weight": "1",
   "Grain_Weight": "2",
   "Meat_Weight": "0.8",
+  "instruction": "example instruction..........." ,
   "ingredients": [{
                   "name": "mung bean",
                   "amount": "1",
@@ -31,6 +32,7 @@
   "Veggie_Weight": "1",
   "Grain_Weight": "2",
   "Meat_Weight": "0.8",
+  "instruction": "example instruction...........",
   "ingredients": [{
                   "name": "tofu",
                   "amount": "1",
@@ -57,6 +59,7 @@
   "Veggie_Weight": "1",
   "Grain_Weight": "2",
   "Meat_Weight": "0.8",
+  "instruction": "example instruction...........",
   "ingredients": [{
                   "name": "tofu",
                   "amount": "1",
@@ -83,6 +86,7 @@
   "Veggie_Weight": "1",
   "Grain_Weight": "2",
   "Meat_Weight": "0.8",
+  "instruction": "example instruction...........",
   "ingredients": [{
                   "name": "broccoli",
                   "amount": "1",
@@ -104,6 +108,7 @@
   "Veggie_Weight": "1",
   "Grain_Weight": "2",
   "Meat_Weight": "0.8",
+  "instruction": "example instruction...........",
   "ingredients": [{
                   "name": "pork",
                   "amount": "1",

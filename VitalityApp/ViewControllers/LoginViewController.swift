@@ -2,20 +2,27 @@
 //  LoginViewController.swift
 //  VitalityApp
 //
-//  Created by Jacky Huynh on 2018-07-26.
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
+// CMPT276
+// Project Group 16
+// Team Vitality
+// Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
+//  Created by Jacky Huynh on 2018-07-26.
+
 
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
+    // UserInput text field object
     @IBOutlet var userInput: UITextField!
     
+    // cancel button, dismisses viewcontroller
     @IBAction func cancelBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    // confirm button, saves username entered
     @IBAction func confirmBtn(_ sender: Any) {
         UserDefaults.standard.set(userInput.text, forKey: "username")
         dismiss(animated: true, completion: nil)
@@ -25,6 +32,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
     }
     
+    // if keyboard is up and users touches outside the keyboard, then keyboard is dimissed
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

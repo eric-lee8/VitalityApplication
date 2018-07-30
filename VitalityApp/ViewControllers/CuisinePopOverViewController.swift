@@ -18,7 +18,7 @@ class CuisinePopOverViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var tableView: UITableView!
     
     // cuisines that can be selected
-    var cuisines: [String] = ["Chinese", "Japanese", "Thai"]
+    var cuisines: [String] = ["Chinese", "Japanese", "Thai", "Korean"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

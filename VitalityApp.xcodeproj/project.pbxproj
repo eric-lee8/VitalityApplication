@@ -26,6 +26,7 @@
 		E41ABE3E210C51D10043A5D6 /* Chinese.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE3D210C51D10043A5D6 /* Chinese.json */; };
 		E41ABE40210C527C0043A5D6 /* Japanese.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE3F210C527C0043A5D6 /* Japanese.json */; };
 		E41ABE42210C52A80043A5D6 /* Thai.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE41210C52A80043A5D6 /* Thai.json */; };
+		E41ABE48210ED9E10043A5D6 /* Korean.json in Resources */ = {isa = PBXBuildFile; fileRef = E41ABE47210ED9E10043A5D6 /* Korean.json */; };
 		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
 		E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E454F6F22104544F00B63F74 /* GoogleService-Info.plist */; };
 		E456BBC8210AC2E7008BA259 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC7210AC2E7008BA259 /* LoginViewController.swift */; };
@@ -62,6 +63,7 @@
 		E41ABE3D210C51D10043A5D6 /* Chinese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Chinese.json; sourceTree = "<group>"; };
 		E41ABE3F210C527C0043A5D6 /* Japanese.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Japanese.json; sourceTree = "<group>"; };
 		E41ABE41210C52A80043A5D6 /* Thai.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Thai.json; sourceTree = "<group>"; };
+		E41ABE47210ED9E10043A5D6 /* Korean.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Korean.json; sourceTree = "<group>"; };
 		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		E454F6F22104544F00B63F74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E456BBC7210AC2E7008BA259 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				E41ABE3D210C51D10043A5D6 /* Chinese.json */,
 				E41ABE3F210C527C0043A5D6 /* Japanese.json */,
 				E41ABE41210C52A80043A5D6 /* Thai.json */,
+				E41ABE47210ED9E10043A5D6 /* Korean.json */,
 			);
 			path = jsonFiles;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				AEA9195220E776AB00281430 /* LaunchScreen.storyboard in Resources */,
 				E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */,
 				E41ABE40210C527C0043A5D6 /* Japanese.json in Resources */,
+				E41ABE48210ED9E10043A5D6 /* Korean.json in Resources */,
 				E41ABE42210C52A80043A5D6 /* Thai.json in Resources */,
 				E41ABE3E210C51D10043A5D6 /* Chinese.json in Resources */,
 				AEA9194F20E776AB00281430 /* Assets.xcassets in Resources */,

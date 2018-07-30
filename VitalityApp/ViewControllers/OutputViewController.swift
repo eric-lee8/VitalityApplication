@@ -39,7 +39,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         print("Output View Controller")
         btnCreate.isHidden = true
         
-        //newRecipes()
+        newRecipes()
         
         // adding user input to the item array to compare with the ingredients from each recipes in data
         //structure
@@ -160,7 +160,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         return(cell)
     }
     
-    /*
+    
     func newRecipes() {
         let veg_ingredients: [String] = ["Asparagus", "Bamboo Shoots", "Basil", "Bean - Chinese Long", "Bean - Green", "Bean - Sprout", "Bok Choy", "Broccoli", "Cabbage - Green", "Cabbage - Napa", "Cabbage - Red", "Carrot", "Celery", "Cilantro", "Corn", "Corn - Baby", "Cucumber", "Eggplant - Asian", "Garlic", "Ginger", "Ginger Pickle", "Kale", "Lemon", "Lettuce - Butter", "Lettuce - Green", "Lime", "Mushroom - Chinese Black Fungus", "Mushroom - Crimini", "Mushroom - Enoki", "Mushroom - Oyster", "Mushroom - Shiitake",  "Mushroom - White", "Mushrooms - Mixed", "Nuts - Almond", "Nuts - Cashew", "Nuts - Peanut", "Onion - Green", "Onion - Medium", "Onion - Red", "Onion - White", "Pea", "Pea - Snap", "Pea - Snow", "Pepper - Chili", "Pepper - Dried Red Chili", "Pepper - Red Chili Powerder", "Pepper - Green Bell", "Pepper - Orange Bell", "Pepper - Red Bell", "Pepper - Yellow Bell", "Peppercorn - Sichuan", "Pineapple", "Radish", "Spanich", "Seaweed", "Sesame Seeds", "Squash - Zucchini", "Wakame", "Water Chestnut"]
         let meat_ingredients: [String] = ["Beef", "Beef - Flank", "Beef - Ripeye", "Chicken", "Chicken - Breast", "Chicken - Thigh", "Crab", "Crab - Imitation", "Egg", "Lamb - Flank", "Pork", "Shrimp", "Tofu"]
@@ -169,7 +169,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         
         var new_ingredients = [String]()
         
-        for cuisine in ["Chinese", "Japanese", "Thai"] {
+        for cuisine in ["Chinese", "Japanese", "Thai", "Korean"] {
             print(cuisine)
             for recipe in get_recipes(cuisine: cuisine) {
                 for ingredient in recipe.ingredients {
@@ -181,7 +181,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         }
         print(new_ingredients)
     }
-     */
+    
     // sending data to the next view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let recipeViewController = segue.destination as! RecipeViewController

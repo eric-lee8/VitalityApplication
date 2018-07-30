@@ -72,7 +72,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     // if analyze button is chosen, function grabs the weights of the recipes, and assigns them to variables
     @IBAction func analyzeBtn(_ sender: Any) {
-        let cuisines = ["Japanese", "Chinese", "Thai"]
+        let cuisines = ["Japanese", "Korean", "Chinese", "Thai"]
         for cuisine in cuisines {
             for recipe in get_recipes(cuisine: cuisine) {
                 for database_recipe in Shared.shared.recipe_database {

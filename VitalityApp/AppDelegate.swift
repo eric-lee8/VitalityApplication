@@ -7,12 +7,11 @@
 // Team Vitality
 // Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
-//  Copyright © 2018 Eric Joseph Lee. All rights reserved.
-//
-// File created by and worked on by Eric Joseph Lee
+// File created by and worked on by Jacky Huynh
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         print("Application did finish launching")
+        FirebaseApp.configure()
+        
         return true
     }
 

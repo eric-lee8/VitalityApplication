@@ -31,6 +31,9 @@ class IngredientViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //disable editting for textfield
+        ingredient_list.isEditable = false
+        
         //testing purposes
         print("vegetables selected", veg_selected_ingredients)
         print("meats selected", meat_selected_ingredients)

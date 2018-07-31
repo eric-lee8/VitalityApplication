@@ -13,7 +13,13 @@ import Foundation
 
 final class Shared {
     static let shared = Shared()
+    
     // variables that all view controllers can access
+    var amounts = [String]()
+    var measures = [String]()
+    var recipe_instructions:String = ""
+    var recipe_tips:String = ""
+    var recipe_serving_size:String = ""
     
     // variables for the history tab
     var recipe_chosen:String!

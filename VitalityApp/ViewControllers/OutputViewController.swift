@@ -32,11 +32,19 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     var recipe_URL:String = ""
     var recipe_chosen:String = ""
     var recipe_ingredients = [String]()
+    var recipe_amounts = [String]()
+    var recipe_measures = [String]()
+    var recipe_instructions = ""
+    var recipe_tips = ""
+    var recipe_yields = ""
+    
     var output: [String] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Output View Controller")
+        
         btnCreate.isHidden = true
         
         newRecipes()
@@ -129,6 +137,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
             
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
             recipe_chosen = output[indexPath.row]
+        
 
         }
         
@@ -146,8 +155,14 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
             if (recipe_chosen == recipe.name) {
                 for ingredient in recipe.ingredients {
                     recipe_ingredients.append(ingredient.name)
+                    recipe_amounts.append(ingredient.amount)
+                    recipe_measures.append(ingredient.measure)
                 }
+                recipe_yields = recipe.serving_size
                 recipe_URL = recipe.url
+                recipe_instructions = recipe.instruction
+                recipe_tips = recipe.tip
+            
             }
         }
     }
@@ -187,7 +202,13 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         let recipeViewController = segue.destination as! RecipeViewController
         recipeViewController.recipe = recipe_chosen
         recipeViewController.ingredients = recipe_ingredients
+        recipeViewController.amounts = recipe_amounts
+        recipeViewController.measures = recipe_measures
         recipeViewController.recipe_URL = recipe_URL
+        recipeViewController.recipe_instructions = recipe_instructions
+        recipeViewController.recipe_tips = recipe_tips
+        recipeViewController.recipe_serving_size = recipe_yields
+        
     }
  
 }

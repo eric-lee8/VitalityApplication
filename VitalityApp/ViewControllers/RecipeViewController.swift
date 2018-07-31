@@ -23,6 +23,7 @@ class RecipeViewController: UIViewController {
     @IBOutlet weak var recipe_button: UIButton!
     @IBOutlet weak var ingredients_list: UITextView!
     @IBOutlet var btnSave: UIButton!
+    @IBOutlet var link_label: UIButton!
     
     // opens safari with link if button is clicked
     @IBAction func recipe_URL(_ sender: Any) {
@@ -35,11 +36,20 @@ class RecipeViewController: UIViewController {
     var recipe_URL:String = ""
     let rootRef = Database.database().reference()
     
+    var amounts = [String]()
+    var measures = [String]()
+    var recipe_instructions:String = ""
+    var recipe_tips:String = ""
+    var recipe_serving_size:String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let reachability = Reachability.init()
-
+        //disable edditting for text field
+        ingredients_list.isEditable = false
+        
         print("Recipe View Controller")
 
         //For testing purposes
@@ -53,13 +63,41 @@ class RecipeViewController: UIViewController {
             btnSave.isHidden = true
         }
         
+        if (recipe_URL == "") {
+            link_label.isHidden = true
+        }
+        
         // sets the button title
         recipe_button.setTitle(recipe, for: .normal)
         
         var str_ingredients = String()
-        for ingredient in ingredients {
-            str_ingredients += ingredient + "\n"
+        str_ingredients = "Yields: "
+        
+        var str_ingredients_heading = String()
+        str_ingredients_heading = "List of Ingredients: "
+        
+        var str_instructions = String()
+        str_instructions = "Instructions: \n"
+        
+        var str_tips = String()
+        str_tips = "Tips for Healthy Meal! \n"
+        
+        str_ingredients += recipe_serving_size + "\n\n"
+        str_ingredients += str_ingredients_heading + "\n"
+        
+        for i in 0..<ingredients.count {
+
+            str_ingredients += amounts[i] + " "
+            str_ingredients += measures[i] + " "
+            str_ingredients += ingredients[i] + "\n"
         }
+        
+        str_ingredients += "\n"
+        str_ingredients += str_instructions
+        str_ingredients += recipe_instructions + "\n" + "\n"
+        str_ingredients += str_tips
+        str_ingredients += recipe_tips
+        
         //Display the list of ingredients
         ingredients_list.text = str_ingredients
     }

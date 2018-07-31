@@ -51,6 +51,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
                 tableView.cellForRow(at: [0, i])?.accessoryType = UITableViewCellAccessoryType.none
             }
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+            
         }
         if ( Shared.shared.recipe_chosen.isEmpty != true ) {
             btnconfirm.isHidden = false
@@ -64,8 +65,13 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
             if (Shared.shared.recipe_chosen == recipe.name) {
                 for ingredient in recipe.ingredients {
                     Shared.shared.recipe_ingredients.append(ingredient.name)
+                    Shared.shared.amounts.append(ingredient.amount)
+                    Shared.shared.measures.append(ingredient.measure)
                 }
+                Shared.shared.recipe_serving_size = recipe.serving_size
                 Shared.shared.recipe_URL = recipe.url
+                Shared.shared.recipe_instructions = recipe.instruction
+                Shared.shared.recipe_tips = recipe.tip
             }
         }
     }
@@ -101,14 +107,4 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         fatalError("Recipe.json does not exist")
     }
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let historyRecipeViewController = segue.destination as! HistoryRecipeViewController
-        historyRecipeViewController.recipe = recipe_chosen
-        historyRecipeViewController.ingredients = recipe_ingredients
-        historyRecipeViewController.recipe_URL = recipe_URL
-        historyRecipeViewController.cuisine = cuisine
-
-    }
- */
 }

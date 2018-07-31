@@ -15,13 +15,13 @@ struct Recipe : Decodable {
     let name : String
     let url : String
     let ingredients : [Ingredient]
-    
     let Veggie_Weight : String
     let Grain_Weight : String
     let Meat_Weight : String
     let instruction : String
     let tip : String
     let serving_size : String
+
     
     init(name : String, url: String, ingredients : [Ingredient], Veggie_Weight : String, Grain_Weight : String, Meat_Weight : String, instruction: String, tip: String, serving_size: String) {
         self.name = name

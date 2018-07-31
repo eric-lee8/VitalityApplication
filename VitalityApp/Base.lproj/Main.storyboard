@@ -401,9 +401,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="recipe_URL:" destination="0oa-zc-LHW" eventType="touchUpInside" id="T3v-Pv-pGf"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Plate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvd-tb-p62">
                                 <rect key="frame" x="38" y="138" width="299" height="58"/>
@@ -420,15 +417,6 @@
                                 <color key="textColor" red="0.96862745100000003" green="0.2784313725" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oh-qt-3IP">
-                                <rect key="frame" x="286" y="627" width="71" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="btnSave:" destination="0oa-zc-LHW" eventType="touchUpInside" id="vFJ-zR-Qd4"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk2-D8-73u">
                                 <rect key="frame" x="152" y="601" width="71" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -438,6 +426,24 @@
                                     <action selector="btnHome:" destination="0oa-zc-LHW" eventType="touchUpInside" id="8hr-Nj-p9C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhj-80-xgL">
+                                <rect key="frame" x="16" y="615" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Link"/>
+                                <connections>
+                                    <action selector="recipe_URL:" destination="0oa-zc-LHW" eventType="touchUpInside" id="zde-l3-5tw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oh-qt-3IP">
+                                <rect key="frame" x="288" y="615" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="0oa-zc-LHW" eventType="touchUpInside" id="vFJ-zR-Qd4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2hh-db-ma9"/>
@@ -445,6 +451,7 @@
                     <connections>
                         <outlet property="btnSave" destination="9oh-qt-3IP" id="vB9-Fi-PDK"/>
                         <outlet property="ingredients_list" destination="SgE-p4-Hbo" id="EZD-YO-n5K"/>
+                        <outlet property="link_label" destination="fhj-80-xgL" id="DK5-ej-Uve"/>
                         <outlet property="recipe_button" destination="nE8-dP-2ad" id="apX-EB-IAi"/>
                     </connections>
                 </viewController>
@@ -551,6 +558,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="userInput:" destination="69d-qB-JL9" eventType="editingDidEnd" id="11r-xv-OqR"/>
+                                    <outlet property="delegate" destination="t0k-Qf-Nao" id="uwg-kD-FYt"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtI-mE-bUZ">

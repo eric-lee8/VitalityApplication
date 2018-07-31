@@ -35,10 +35,12 @@ class ViewController: UIViewController {
         if (reachability?.connection == .none) {
             createAlert(title: "Internet Connect Required For History", message: "Please Connect to Wifi")
         }
+        
         // if users are not logged in then create an alert telling them
         else if (UserDefaults.standard.object(forKey: "username") == nil ) {
             createAlert(title: "Login is Required", message: "Please Login")
         }
+        
     }
     
     override func viewDidLoad() {
@@ -83,6 +85,11 @@ class ViewController: UIViewController {
         Shared.shared.veg_weight_total = 0
         Shared.shared.grain_weight_total = 0
         Shared.shared.meat_weight_total  = 0
+        Shared.shared.amounts = [String]()
+        Shared.shared.measures = [String]()
+        Shared.shared.recipe_instructions = ""
+        Shared.shared.recipe_tips = ""
+        Shared.shared.recipe_serving_size = ""
         
         // if users are logged in then grab all their saved recipes from the database and save recipe_database in the shared file
         if (UserDefaults.standard.object(forKey: "username") != nil) {

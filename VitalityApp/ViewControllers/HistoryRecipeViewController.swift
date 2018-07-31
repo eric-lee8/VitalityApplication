@@ -29,6 +29,12 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     var cuisine:String = Shared.shared.selected_cuisine
     var imageURL:String = ""
     
+    var amounts = Shared.shared.amounts
+    var measures = Shared.shared.measures
+    var recipe_instructions = Shared.shared.recipe_instructions
+    var recipe_tips = Shared.shared.recipe_tips
+    var recipe_serving_size = Shared.shared.recipe_serving_size
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,11 +42,34 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
         
         // sets the button title
         btnURLlabel.setTitle(recipe, for: .normal)
-        var str_ingredients = String()
         
-        for ingredient in ingredients {
-            str_ingredients += ingredient + "\n"
+        var str_ingredients = String()
+        str_ingredients = "Yields: "
+        
+        var str_ingredients_heading = String()
+        str_ingredients_heading = "List of Ingredients: "
+        
+        var str_instructions = String()
+        str_instructions = "Instructions: \n"
+        
+        var str_tips = String()
+        str_tips = "Tips for Healthy Meal! \n"
+        
+        str_ingredients += recipe_serving_size + "\n\n"
+        str_ingredients += str_ingredients_heading + "\n"
+        
+        for i in 0..<ingredients.count {
+            
+            str_ingredients += amounts[i] + " "
+            str_ingredients += measures[i] + " "
+            str_ingredients += ingredients[i] + "\n"
         }
+        
+        str_ingredients += "\n"
+        str_ingredients += str_instructions
+        str_ingredients += recipe_instructions + "\n" + "\n"
+        str_ingredients += str_tips
+        str_ingredients += recipe_tips
         
         //Display the list of ingredients
         ingredients_list.text = str_ingredients

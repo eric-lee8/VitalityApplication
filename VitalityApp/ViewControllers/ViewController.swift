@@ -18,7 +18,7 @@ import FirebaseDatabase
 class ViewController: UIViewController {
     
     var databaseHandle:DatabaseHandle?
-        
+    
     // objects buttons on viewcontroller
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var logoutBtnLabel: UIButton!

@@ -8,7 +8,7 @@
  "instruction": "Step 1: Preheat oven to 300F\n\nStep 2: Toast the sesame seeds over a pie tin for about 12 to 16 minutes.\n\nStep 3: In a medium size skillet over low heat, stir fry the garlic,scallions and ginger in the oil for 2 to 3 minutes\n\nStep 4: Add all the remaining ingredients, increase the heat to moderate, then boil the mixture for 1 minute\n\nStep 5: Pour the dressing over the bean sprouts, chill the salad for several hours. Toss before serving.\n\n",
  "tip": "Add 0.25 lb such as chicken and add 0.25 grains such as rice to complete the meal.",
  "ingredients": [{
-                 "name": "Bean - Sprouts",
+                 "name": "Bean - Sprout",
                  "amount": "1",
                  "measure": "pound"
                  },
@@ -28,7 +28,7 @@
                  "measure": "inch cube"
                  },
                  {
-                 "name": "Sesame seeds",
+                 "name": "Sesame seed",
                  "amount": "2",
                  "measure": "tablespoon"
                  },
@@ -84,12 +84,12 @@
                  "measure": "pound"
                  },
                  {
-                 "name": "Wet Chestnut",
+                 "name": "Water Chestnut",
                  "amount": "1/4",
                  "measure": "pound"
                  },
                  {
-                 "name": "Bamboo Shoots",
+                 "name": "Bamboo Shoot",
                  "amount": "1/4",
                  "measure": "pound"
                  },
@@ -212,7 +212,7 @@
                  "measure": "clove"
                  },
                  {
-                 "name": "Eggs",
+                 "name": "Egg",
                  "amount": "2",
                  "measure": "medium sized"
                  },
@@ -253,7 +253,7 @@
                  "measure": "pinch"
                  },
                  {
-                 "name": "Pepper - Dried Red Chilies",
+                 "name": "Pepper - Dried Red Chili",
                  "amount": "4",
                  "measure": "small size"
                  },
@@ -263,47 +263,47 @@
                  "measure": "tsp"
                  },
                  {
-                 "name": "Soy Sauce(Marinade)",
+                 "name": "Soy Sauce",
                  "amount": "2",
                  "measure": "tablespoons"
                  },
                  {
-                 "name": "Cornstarch(Marinade)",
+                 "name": "Cornstarch",
                  "amount": "2",
                  "measure": "teaspoons"
                  },
                  {
-                 "name": "Chinese rice wine(Marinade)",
+                 "name": "Chinese Rice Wine",
                  "amount": "1",
                  "measure": "tablespoon"
                  },
                  {
-                 "name": "Chinese black vinegar(Sauce)",
+                 "name": "Chinese Black Vinegar",
                  "amount": "3",
                  "measure": "tablespoon"
                  },
                  {
-                 "name": "Soy Sauce(Sauce)",
+                 "name": "Soy Sauce",
                  "amount": "1",
                  "measure": "tablespoon"
                  },
                  {
-                 "name": "Chinese rice wine(Sauce)",
+                 "name": "Chinese rice wine",
                  "amount": "1",
                  "measure": "tablespoon"
                  },
                  {
-                 "name": "Sugar(Sauce)",
+                 "name": "Sugar",
                  "amount": "2",
                  "measure": "teaspoon"
                  },
                  {
-                 "name": "Chilli Garlic Sauce(Sauce)",
+                 "name": "Chilli Garlic Sauce",
                  "amount": "2",
                  "measure": "teaspoon"
                  },
                  {
-                 "name": "Sesame Oil(Sauce)",
+                 "name": "Sesame Oil",
                  "amount": "1",
                  "measure": "teaspoon"
                  }
@@ -356,17 +356,17 @@
                  {
                  "name": "Corn Oil",
                  "amount": "5",
-                 "measure": "tb"
+                 "measure": "tbsp"
                  },
                  {
                  "name": "Sugar",
                  "amount": "2",
-                 "measure": "tb"
+                 "measure": "tbsp"
                  },
                  {
                  "name": "Soy Sauce",
                  "amount": "4",
-                 "measure": "tb"
+                 "measure": "tbsp"
                  }
                  ]
  },
@@ -377,10 +377,10 @@
  "Veggie_Weight": "0.75",
  "Grain_Weight": "0",
  "Meat_Weight": "1.25",
- "instruction": "Step 1: Mix the chicken with marinade mixture. Combine sauce ingredients and set aside. Make up cornstarch mixture and set asie. \n\nStep 2: Cut the bell pepper pieces. Heat 1 1/2 cups oil in wok until smoking. Add chicken and stir constantly until shreds separate and are cooked. \n\nStep 3: Remove chicken and place in bowl. Pour off all but 2 Tbsp of the oil from the wok. When hot, add the sauce mixture and stir together over medium heat for 30 seconds to 1 minute.\n\nStep 4: Return chicken pieces to wok and toss. Add cornstarch mixture and stir until sauce thickens.\n\nStep 5: Add the bell pepper pieces, stir the mixture, cooking for about 1 minute.",
+ "instruction": "Step 1: Mix the chicken with marinade mixture. Combine sauce ingredients and set aside. Make up cornstarch mixture and set aside. \n\nStep 2: Cut the bell pepper pieces. Heat 1 1/2 cups oil in wok until smoking. Add chicken and stir constantly until shreds separate and are cooked. \n\nStep 3: Remove chicken and place in bowl. Pour off all but 2 Tbsp of the oil from the wok. When hot, add the sauce mixture and stir together over medium heat for 30 seconds to 1 minute.\n\nStep 4: Return chicken pieces to wok and toss. Add cornstarch mixture and stir until sauce thickens.\n\nStep 5: Add the bell pepper pieces, stir the mixture, cooking for about 1 minute.",
  "tip": "To complete your meal. consider serving your meal with 0.625 lbs of rice and adding in 0.625 lbs of additional vegetables such stir fried green beans.",
  "ingredients": [{
-                 "name": "Chciken",
+                 "name": "Chicken",
                  "amount": "1",
                  "measure": "lb"
                  },
@@ -578,7 +578,7 @@
                  {
                  "name": "Chinese Wine",
                  "amount": "1",
-                 "measure": "Tbsp"
+                 "measure": "tbsp"
                  },
                  {
                  "name": "Pepper",
@@ -703,7 +703,7 @@
                  "measure": "tbsp"
                  },
                  {
-                 "name": "Chinese hot dried red peppers",
+                 "name": "Pepper - Dried Red Chili",
                  "amount": "2",
                  "measure": "medium size"
                  },
@@ -803,34 +803,34 @@
                  "measure": "oz"
                  },
                  {
-                 "name": "Crabmeat",
+                 "name": "Crab",
                  "amount": "6",
                  "measure": "oz"
                  },
                  {
                  "name": "Sesame Oil",
                  "amount": "2",
-                 "measure": "tb"
+                 "measure": "tbsp"
                  },
                  {
                  "name": "Black Pepper",
                  "amount": "1/2",
-                 "measure": "ts"
+                 "measure": "tsp"
                  },
                  {
                  "name": "Salt",
                  "amount": "1 and 1/2",
-                 "measure": "ts"
+                 "measure": "tsp"
                  },
                  {
                  "name": "Vegetable Oil",
                  "amount": "3",
-                 "measure": "ts"
+                 "measure": "tsp"
                  },
                  {
                  "name": "Red Wine Vinegar",
                  "amount": "1",
-                 "measure": "ts"
+                 "measure": "tsp"
                  }
                  ]
  },{
@@ -1058,7 +1058,7 @@
                  "measure": "pound"
                  },
                  {
-                 "name": "Pepper - Dried Chili",
+                 "name": "Pepper - Dried Red Chili",
                  "amount": "5",
                  "measure": "small"
                  },
@@ -1677,7 +1677,7 @@
                  "measure": "sliced"
                  },
                  {
-                 "name": "Peas",
+                 "name": "Pea",
                  "amount": "5",
                  "measure": "oz"
                  },
@@ -1692,7 +1692,7 @@
                  "measure": "pound"
                  },
                  {
-                 "name": "Noodles - Ramen",
+                 "name": "Noodle - Ramen",
                  "amount": "2",
                  "measure": "pkg"
                  },
@@ -1732,12 +1732,12 @@
  "instruction": "Step 1: Preheat the oven to 425 degrees Fahrenheit. Cut zucchini into fry-shaped pieces. \n\n Step 2: On a plate, put corn starch, salt, and pepper together, mix the zucchini into the mixture. Dip the zucchini fries into the egg mixture, then press into bread crumbs. Place the breaded zucchini onto a baking sheet. \n\n Step 3: Bake for 15 minutes or until fries are golden brown. \n\n",
  "tip": "Try serving with a side of 0.25 lbs of rice",
  "ingredients": [{
-                 "name": "Zucchini",
+                 "name": "Squash - Zucchini",
                  "amount": "2",
                  "measure": "medium sized"
                  },
                  {
-                 "name": "Panko bread crumbs",
+                 "name": "Bread Crumbs",
                  "amount": "",
                  "measure": ""
                  },
@@ -1876,7 +1876,7 @@
  "instruction": "Step 1: Rinse chestnut well under warm water. Peel with a knife of peeler (like you would an apple) the skin of the water chestnut\n\nStep 2: Cut water chestnuts in half, sweet corn in sections and carrots into pieces\n\nStep 3: Put all the ingredients into a pan and pour in water until just enough to immerse all the igredients\n\nStep 4: Bring to a boil over high heat, then turn to low heat and simmer till the carrot is soften.\n\n",
  "tip": "Consider adding 0.25 lbs of Chicken to your meal.",
  "ingredients": [{
-                 "name": "Corn - Sweet",
+                 "name": "Corn",
                  "amount": "1",
                  "measure": "medium sized"
                  },
@@ -1911,17 +1911,17 @@
  "instruction": "Step 1: Heat up cooking oil in wok till hot. Stir fry the minced garlic and ginger till aromatic. Add carrots, black fungus and shiitake mushroom. Stir fry briefly until they get soften.\n\nStep 2: Add the rest of the vegetables (Chinese cabbage, broccoli, cauliflower and sweet peas) with a small splash of water. Stir fry briefly until the cabbage starts to soften.\n\nStep 3: Add in all the seasoning except for the stock and water. Mix well.\n\nStep 4: Add in the stock and water and allow the sauce to cook till it boils before lowering the heat. Allow it to simmer on low heat till the sauce thickens.\n\n",
  "tip": "Consider serving this over 0.25 lbs of your choice grain.",
  "ingredients": [{
-                 "name": "Cabbage",
+                 "name": "Cabbage - Green",
                  "amount": "1/2",
                  "measure": "medium sized"
                  },
                  {
-                 "name": "Black Fungus",
+                 "name": "Mushroom - Chinese Black Fungus",
                  "amount": "4",
                  "measure": "pcs"
                  },
                  {
-                 "name": "Peas - Sweet",
+                 "name": "Pea - Sweet",
                  "amount": "4",
                  "measure": "pcs"
                  },
@@ -1997,7 +1997,7 @@
  "instruction": "Step 1: Wash rice as normal. Place the rice in a pot and add water to the appropriate level indicated in the pot.\n\nStep 2: Remove 6 tbsp. of water from the pot (for the water amount of tomato), then add salt, pepper, and olive oil, and mix well.\n\nStep 3: Remove stem of tomato from top (and the bottom if you want), make a crisscross at its bottom. Place the tomato in the middle of the pot, and other ingredients the way you like.\n\nStep 4: Put the pot into the rice cooker. Cover and press the button to start. \n\nStep 5: When done, toss the rice along with tomato and other ingredients lightly using a rice paddle, then it’s ready to serve.\n\n",
  "tip": "Consider adding in 0.25 lbs of your choice of meat.",
  "ingredients": [{
-                 "name": "Rice",
+                 "name": "Rice - Jasmine",
                  "amount": "2",
                  "measure": "cups"
                  },
@@ -2017,7 +2017,7 @@
                  "measure": ""
                  },
                  {
-                 "name": "Onion",
+                 "name": "Onion - Medium",
                  "amount": "1/2",
                  "measure": ""
                  },
@@ -2082,7 +2082,7 @@
  "instruction": "Step 1: Bring a medium saucepan of water to boil. Place rice vermicelli in boiling water, remove from heat, and let soak 3 to 5 minutes, until soft. Drain, and rinse with cold water.\n\nStep 2: Fill a large bowl with warm water. Dip one rice wrapper in the water for a few second to soften. Lay wrapper flat on a dry towel and brush on hoisin sauce.\n\nStep 3: Place desired amounts of noodles, tofu, vegetables and basil in the center. Roll the edges of the wrapper slightly inward. Beginning at the bottom edge of wrapper, tightly wrap the ingredients. Repeat with remaining ingredients.\n\nStep 4: Serve immediately.\n\n",
  "tip": "Consider adding in an additional 0.5 lbs of carrots to your dish.",
  "ingredients": [{
-                 "name": "Vermicelli",
+                 "name": "Vermicelli - Rice",
                  "amount": "8",
                  "measure": "ounce"
                  },
@@ -2142,7 +2142,7 @@
                  "measure": "ribs"
                  },
                  {
-                 "name": "Peas - Snap",
+                 "name": "Pea - Snap",
                  "amount": "1/2",
                  "measure": "cup"
                  },
@@ -2182,7 +2182,7 @@
                  "measure": "teaspoon"
                  },
                  {
-                 "name": "Sesame Seeds",
+                 "name": "Sesame Seed",
                  "amount": "1",
                  "measure": "teaspoon"
                  },
@@ -2252,7 +2252,7 @@
                  "measure": "tablespoons"
                  },
                  {
-                 "name": "Onion",
+                 "name": "Onion - Medium",
                  "amount": "1",
                  "measure": "small"
                  },

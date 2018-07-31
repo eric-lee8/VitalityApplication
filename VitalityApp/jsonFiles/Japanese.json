@@ -33,7 +33,7 @@
                   "measure": "pinch"
                   },
                   {
-                  "name": "Pepper",
+                  "name": "Pepper - Dried Red Chili",
                   "amount": "1",
                   "measure": "Pinch"
                   },
@@ -93,7 +93,7 @@
                   "measure": "tbsp"
                   },
                   {
-                  "name": "Sesame Seeds",
+                  "name": "Sesame Seed",
                   "amount": "1/2",
                   "measure": "cup"
                   },
@@ -163,7 +163,7 @@
                   "measure": "tsp"
                   },
                   {
-                  "name": "Sesame seeds",
+                  "name": "Sesame seed",
                   "amount": "2",
                   "measure": "tbsp"
                   },
@@ -293,7 +293,7 @@
   "instruction": "Step 1: In a bowl, combine the potatoe vinegar, peanut oil, soy sauce, sesame oil, crushed red pepper and sugar (optional). Whisk well. \n\nStep 2: Add cucumbers and red onion. Toss them in the dressing. \n\nStep 3: Cover and chill for 24 hours to 48 hours. \n\nStep 4: To serve, sprinkle with toasted pumpkin seeds and chopped onions.",
   "tip": "To complete your meal, consider adding 1/4 plate amount of grain, and 1/4 plate amount of meat",
   "ingredients": [{
-                  "name": "Sesame seeds",
+                  "name": "Sesame seed",
                   "amount": "2",
                   "measure": "tbsp"
                   },
@@ -353,7 +353,7 @@
                   "measure": "pound"
                   },
                   {
-                  "name": "Sesame Seeds",
+                  "name": "Sesame Seed",
                   "amount": "3",
                   "measure": "tbsp"
                   },
@@ -409,7 +409,7 @@
                   "measure": "tsp"
                   },
                   {
-                  "name": "Sesame Seeds",
+                  "name": "Sesame Seed",
                   "amount": "1",
                   "measure": "pinch"
                   }]
@@ -505,7 +505,7 @@
                   "measure": "medium size"
                   },
                   {
-                  "name": "Cucumbers",
+                  "name": "Cucumber",
                   "amount": "1",
                   "measure": "Medium size"
                   }]

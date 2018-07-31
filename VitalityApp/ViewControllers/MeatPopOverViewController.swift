@@ -18,7 +18,7 @@ class MeatPopOverViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var tableView: UITableView!
     
     // ingredients that can be selected
-    var meat_ingredients: [String] = ["Beef", "Beef - Flank", "Beef - Ripeye", "Chicken", "Chicken - Breast", "Chicken - Thigh", "Crab", "Crab - Imitation", "Egg", "Lamb - Flank", "Pork", "Shrimp", "Tofu"]
+    var meat_ingredients: [String] = ["Beef", "Beef - Flank", "Beef - Ripeye", "Chicken", "Chicken - Breast", "Chicken - Thigh", "Chicken Broth", "Crab", "Crab - Imitation", "Egg", "Lamb - Flank", "Oyster", "Pork", "Shrimp", "Tofu", "Tuna"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

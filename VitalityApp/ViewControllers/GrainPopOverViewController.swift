@@ -17,7 +17,7 @@ class GrainPopOverViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var Popupview: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    var grain_ingredients: [String] = ["Starch - Corn", "Flour", "Flour - Corn","Noodle - Ramen", "Noodle - Chinese",  "Noodle - Stir Fry", "Noodle - Shirataki", "Noodle - Soba", "Noodle - Yakisoba", "Rice - Calrose", "Rice - Jasmine", "Rice - Brown", "bread", "Vermicelli - Rice", "quinoa"]
+    var grain_ingredients: [String] = ["Bread Crumbs", "Starch - Corn", "Flour", "Flour - Corn","Noodle - Ramen", "Noodle - Chinese",  "Noodle - Stir Fry", "Noodle - Shirataki", "Noodle - Soba", "Noodle - Somen", "Noodle - Yakisoba", "Miso", "Rice - Calrose", "Rice - Jasmine", "Rice - Brown", "Rice Wrappers", "Vermicelli - Rice", "quinoa"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

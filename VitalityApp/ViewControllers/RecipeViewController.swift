@@ -46,7 +46,6 @@ class RecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let reachability = Reachability.init()
         //disable edditting for text field
         ingredients_list.isEditable = false
         
@@ -58,8 +57,8 @@ class RecipeViewController: UIViewController {
         print("ingredients", ingredients)
         
         
-        // if there is no internet connection or users are not logged in then save button is hidden
-        if (UserDefaults.standard.object(forKey: "username") == nil || reachability?.connection == .none) {
+        // if users are not logged in then save button is hidden
+        if (UserDefaults.standard.object(forKey: "username") == nil) {
             btnSave.isHidden = true
         }
         
@@ -71,6 +70,7 @@ class RecipeViewController: UIViewController {
         // sets the button title
         recipe_button.setTitle(recipe, for: .normal)
         
+        // prints instructions
         var str_ingredients = String()
         str_ingredients = "Yields: "
         

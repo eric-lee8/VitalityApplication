@@ -30,7 +30,6 @@
 		E43B060620FC325D0052A883 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B060520FC325D0052A883 /* IngredientViewController.swift */; };
 		E454F6F32104544F00B63F74 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E454F6F22104544F00B63F74 /* GoogleService-Info.plist */; };
 		E456BBC8210AC2E7008BA259 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC7210AC2E7008BA259 /* LoginViewController.swift */; };
-		E456BBCA210AF292008BA259 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456BBC9210AF292008BA259 /* Reachability.swift */; };
 		E4854D2B2106E36000C08ADC /* HistoryRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */; };
 		E4854D2F2106F6F300C08ADC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */; };
 		E49A0424210B07EC00F5D26D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A0423210B07EC00F5D26D /* ChartViewController.swift */; };
@@ -67,7 +66,6 @@
 		E43B060520FC325D0052A883 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		E454F6F22104544F00B63F74 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E456BBC7210AC2E7008BA259 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E456BBC9210AF292008BA259 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		E4854D2A2106E36000C08ADC /* HistoryRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecipeViewController.swift; sourceTree = "<group>"; };
 		E4854D2E2106F6F300C08ADC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E49A0423210B07EC00F5D26D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 				AE5A385520F58CA00096281B /* Shared.swift */,
 				716CF2FE20ECA73700758692 /* Ingredient.swift */,
 				716CF30020ECA76C00758692 /* Recipe.swift */,
-				E456BBC9210AF292008BA259 /* Reachability.swift */,
 			);
 			path = swiftFiles;
 			sourceTree = "<group>";
@@ -329,7 +326,6 @@
 				AE12991520FC0A250008EB53 /* MeatPopOverViewController.swift in Sources */,
 				E4854D2F2106F6F300C08ADC /* HistoryViewController.swift in Sources */,
 				716CF30120ECA76C00758692 /* Recipe.swift in Sources */,
-				E456BBCA210AF292008BA259 /* Reachability.swift in Sources */,
 				AE5A385A20F5C8FA0096281B /* SelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

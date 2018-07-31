@@ -9,7 +9,7 @@
 //
 // File created by Eric Joseph Lee, Jacky Huynh
 //
-// Bugs: Variables would not be resetted when revisiting this viewController, internet connectivity was not being detected, uibarbuttonitems were not working as intended, alert when users have no internet was not working
+// Bugs(fixed): Variables would not be resetted when revisiting this viewController, internet connectivity was not being detected, uibarbuttonitems were not working as intended, alert when users have no internet was not working
 
 
 import UIKit
@@ -18,6 +18,9 @@ import FirebaseDatabase
 class ViewController: UIViewController {
     
     var databaseHandle:DatabaseHandle?
+    
+    let reachability = Reachability()!
+    var internet = 1
     
     // objects buttons on viewcontroller
     @IBOutlet var loginBtn: UIButton!
@@ -32,17 +35,9 @@ class ViewController: UIViewController {
     
     @IBAction func historyBtn(_ sender: Any) {
         
-        // tests if users have a internet connection, if not create an alert telling
-        let reachability = Reachability.init()
-        if (reachability?.connection == .none) {
-            createAlert(title: "Internet Connect Required For History", message: "Please Connect to Wifi")
-        }
-        
-        // if users are not logged in then create an alert telling them
-        else if (UserDefaults.standard.object(forKey: "username") == nil ) {
+        if (UserDefaults.standard.object(forKey: "username") == nil ) {
             createAlert(title: "Login is Required", message: "Please Login")
         }
-        
     }
     
     override func viewDidLoad() {
@@ -61,6 +56,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         // if users have a saved username then the login button is the users username, and make the logout button visible
         if let user = UserDefaults.standard.object(forKey: "username") as? String {
             logoutBtnLabel.isHidden = false

@@ -9,7 +9,7 @@
 //
 //  Created by Jacky Huynh on 2018-07-23.
 //
-// Bugs: Images would not get download/upload to/from the database
+// Bugs(fixed): Images would not get download/upload to/from the database
 
 import UIKit
 import FirebaseStorage
@@ -100,16 +100,12 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
                     }
                     DispatchQueue.main.async {
                         self.recipeImageView?.image = UIImage(data: data!)
+                        self.btnUpload.backgroundColor = UIColor.clear
                         self.btnUpload.setTitle("", for: .normal)
                     }
-
                 }.resume()
-                
             }
-            
         })
-        
-        
     }
     
     // if the recipe image button is clicked, allow users to pick the image they want to display
@@ -141,6 +137,7 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
         // displays users selected image in the imageview
         if let selectedImage = selectedImageFromPicker {
             recipeImageView.image = selectedImage
+            btnUpload.backgroundColor = UIColor.clear
             btnUpload.setTitle("", for: .normal)
         }
         

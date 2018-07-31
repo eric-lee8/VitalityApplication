@@ -9,7 +9,7 @@
 //
 //  Created by Jacky Huynh on 2018-07-23.
 //
-
+// Bugs: Recipes would get fetched more than once and would get displayed more than once on the tableview, app would crash when trying to decode the json files because of wrong formatting, confirm button would crash because proper data was not fetched
 
 import UIKit
 

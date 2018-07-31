@@ -8,6 +8,8 @@
 // Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
 // File created by Eric Joseph Lee, Jacky Huynh
+//
+// Bugs: Variables would not be resetted when revisiting this viewController, internet connectivity was not being detected, uibarbuttonitems were not working as intended, alert when users have no internet was not working
 
 
 import UIKit

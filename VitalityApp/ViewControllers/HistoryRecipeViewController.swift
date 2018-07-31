@@ -9,6 +9,7 @@
 //
 //  Created by Jacky Huynh on 2018-07-23.
 //
+// Bugs: Images would not get download/upload to/from the database
 
 import UIKit
 import FirebaseStorage
@@ -21,6 +22,7 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     @IBOutlet var btnURLlabel: UIButton!
     @IBOutlet var ingredients_list: UITextView!
     @IBOutlet var btnUpload: UIButton!
+    @IBOutlet var link_label: UIButton!
     
     // grabbing the appropriate variables needed from the shared file
     var recipe:String = Shared.shared.recipe_chosen
@@ -28,7 +30,6 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     var recipe_URL:String = Shared.shared.recipe_URL
     var cuisine:String = Shared.shared.selected_cuisine
     var imageURL:String = ""
-    
     var amounts = Shared.shared.amounts
     var measures = Shared.shared.measures
     var recipe_instructions = Shared.shared.recipe_instructions
@@ -37,12 +38,17 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         var databaseHandle:DatabaseHandle
+        
+        // make link invisible if there is no link involved with recipe
+        if (recipe_URL == "") {
+            link_label.isHidden = true
+        }
         
         // sets the button title
         btnURLlabel.setTitle(recipe, for: .normal)
         
+        // Prints out all the recipe informations
         var str_ingredients = String()
         str_ingredients = "Yields: "
         

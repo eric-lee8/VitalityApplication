@@ -8,6 +8,8 @@
 // Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
 //  Created by Jacky Huynh on 2018-07-27.
+//
+// Bugs: PieChart would not be displayed, data would not be properly transferred to the variables so app would crash went entering this viewController
 
 
 import UIKit

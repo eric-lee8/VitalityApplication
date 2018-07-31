@@ -9,7 +9,7 @@
 //
 // File created and worked on by Jacky Huynh, Eric Joseph Lee, Jordan Cheung, and Philip Choi
 // All JSON files created by Philip Choi
-// Bugs(fixed): Objects were displayed in the wrong positions
+// Bugs(fixed): Objects were displayed in the wrong positions,
 
 import UIKit
 
@@ -40,18 +40,14 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     
     var output: [String] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Output View Controller")
         
         btnCreate.isHidden = true
         
-        newRecipes()
-        
         // adding user input to the item array to compare with the ingredients from each recipes in data
         //structure
-        
         var items: [String] = []
         
         for veggie in veg_selected_ingredients {
@@ -173,28 +169,6 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
         cell.textLabel?.text = output[indexPath.row]
         
         return(cell)
-    }
-    
-    
-    func newRecipes() {
-        let veg_ingredients: [String] = ["Asparagus", "Bamboo Shoots", "Basil", "Bean - Chinese Long", "Bean - Green", "Bean - Sprout", "Bok Choy", "Broccoli", "Cabbage - Green", "Cabbage - Napa", "Cabbage - Red", "Carrot", "Celery", "Cilantro", "Corn", "Corn - Baby", "Cucumber", "Eggplant - Asian", "Garlic", "Ginger", "Ginger Pickle", "Kale", "Lemon", "Lettuce - Butter", "Lettuce - Green", "Lime", "Mushroom - Chinese Black Fungus", "Mushroom - Crimini", "Mushroom - Enoki", "Mushroom - Oyster", "Mushroom - Shiitake",  "Mushroom - White", "Mushrooms - Mixed", "Nuts - Almond", "Nuts - Cashew", "Nuts - Peanut", "Onion - Green", "Onion - Medium", "Onion - Red", "Onion - White", "Pea", "Pea - Snap", "Pea - Snow", "Pepper - Chili", "Pepper - Dried Red Chili", "Pepper - Red Chili Powerder", "Pepper - Green Bell", "Pepper - Orange Bell", "Pepper - Red Bell", "Pepper - Yellow Bell", "Peppercorn - Sichuan", "Pineapple", "Radish", "Spanich", "Seaweed", "Sesame Seeds", "Squash - Zucchini", "Wakame", "Water Chestnut"]
-        let meat_ingredients: [String] = ["Beef", "Beef - Flank", "Beef - Ripeye", "Chicken", "Chicken - Breast", "Chicken - Thigh", "Crab", "Crab - Imitation", "Egg", "Lamb - Flank", "Pork", "Shrimp", "Tofu"]
-        let grain_ingredients: [String] = ["Starch - Corn", "Flour", "Flour - Corn","Noodle - Ramen", "Noodle - Chinese",  "Noodle - Stir Fry", "Noodle - Shirataki", "Noodle - Soba", "Noodle - Yakisoba", "Rice - Calrose", "Rice - Jasmine", "Rice - Brown", "bread", "Vermicelli - Rice", "quinoa"]
-        let dairy_ingredients: [String] = ["Butter", "Cream", "Cheese", "Milk", "Soy Milk", "Yogourt"]
-        
-        var new_ingredients = [String]()
-        
-        for cuisine in ["Chinese", "Japanese", "Thai", "Korean"] {
-            print(cuisine)
-            for recipe in get_recipes(cuisine: cuisine) {
-                for ingredient in recipe.ingredients {
-                    if ( !veg_ingredients.contains(ingredient.name) && !meat_ingredients.contains(ingredient.name) && !grain_ingredients.contains(ingredient.name) && !dairy_ingredients.contains(ingredient.name)) {
-                        new_ingredients.append(ingredient.name)
-                    }
-                }
-            }
-        }
-        print(new_ingredients)
     }
     
     // sending data to the next view controller

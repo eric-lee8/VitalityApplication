@@ -11,7 +11,7 @@
 //
 // Bugs(fixed): Recipe name was not showing up properly, recipe name was cut off when displayed, URL link was not working 
 //
-// Added: URL link to name of the recipe
+// Added: URL link to name of the recipe, app would crash when attempting to upload recipes to database, home button was not taking users back to the rootViewController
 
 import UIKit
 import FirebaseDatabase
@@ -63,6 +63,7 @@ class RecipeViewController: UIViewController {
             btnSave.isHidden = true
         }
         
+        // make link invisible if there is no link involved with recipe
         if (recipe_URL == "") {
             link_label.isHidden = true
         }

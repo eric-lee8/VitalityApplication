@@ -8,6 +8,8 @@
 // Members: Eric Joseph Lee, Philip Choi, Jacky Huynh, Jordan Cheung
 //
 //  Created by Jacky Huynh on 2018-07-26.
+//
+// Bugs: Keyboard was not being dismissed when clicking outside the keyboard or hitting the return key
 
 
 import UIKit

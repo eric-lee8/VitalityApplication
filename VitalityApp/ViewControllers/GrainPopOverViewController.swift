@@ -60,6 +60,7 @@ class GrainPopOverViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
         cell.textLabel?.text = grain_ingredients[indexPath.row]
         if ( Shared.shared.grain_selected_ingredients.contains((cell.textLabel?.text)!)) {
             cell.accessoryType = UITableViewCellAccessoryType.checkmark

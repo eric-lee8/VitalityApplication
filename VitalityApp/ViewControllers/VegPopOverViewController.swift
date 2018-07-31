@@ -55,8 +55,11 @@ class VegPopOverViewController: UIViewController, UITableViewDelegate, UITableVi
     
     // Displays the cells, as well as assign checkmarks to to previously selected ingredients if the viewcontroller is revisisted
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {    
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
+        
         cell.textLabel?.text = veg_ingredients[indexPath.row]
         
         if ( Shared.shared.veg_selected_ingredients.contains((cell.textLabel?.text)!)) {

@@ -40,7 +40,7 @@ class ChartViewController: UIViewController {
         
         // the calculated data
         veg_chart = PieChartDataEntry(value: veg_entry, label: "Vegetables")
-        grain_chart = PieChartDataEntry(value: grain_entry, label: "Whole Grains")
+        grain_chart = PieChartDataEntry(value: grain_entry, label: "Grains")
         meat_chart = PieChartDataEntry(value: meat_entry, label: "Meat & Alternatives")
         // assigning to the plate
         plateData = [veg_chart, grain_chart, meat_chart]

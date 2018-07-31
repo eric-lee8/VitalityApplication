@@ -19,7 +19,12 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
     
     // objects in the viewController
     @IBOutlet var recipeImageView: UIImageView!
-    @IBOutlet var btnURLlabel: UIButton!
+    
+    //@IBOutlet var btnURLlabel: UIButton!
+    
+    
+    @IBOutlet var btnURLlabel: UILabel!
+    
     @IBOutlet var ingredients_list: UITextView!
     @IBOutlet var btnUpload: UIButton!
     @IBOutlet var link_label: UIButton!
@@ -40,13 +45,16 @@ class HistoryRecipeViewController: UIViewController, UIImagePickerControllerDele
         super.viewDidLoad()
         var databaseHandle:DatabaseHandle
         
+        // auto resize font when string is too long
+        btnURLlabel.adjustsFontSizeToFitWidth = true
+        
         // make link invisible if there is no link involved with recipe
         if (recipe_URL == "") {
             link_label.isHidden = true
         }
         
         // sets the button title
-        btnURLlabel.setTitle(recipe, for: .normal)
+        btnURLlabel.text = recipe
         
         // Prints out all the recipe informations
         var str_ingredients = String()

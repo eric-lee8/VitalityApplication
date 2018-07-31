@@ -166,6 +166,7 @@ class OutputViewController: UIViewController, UITableViewDataSource, UITableView
     // creates the cells 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.adjustsFontSizeToFitWidth = true
         cell.textLabel?.text = output[indexPath.row]
         
         return(cell)

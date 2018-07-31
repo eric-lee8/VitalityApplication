@@ -20,7 +20,8 @@ import FirebaseDatabase
 class RecipeViewController: UIViewController {
 
     // recipe button, and text view objects
-    @IBOutlet weak var recipe_button: UIButton!
+    
+    @IBOutlet var recipe_button: UILabel!
     @IBOutlet weak var ingredients_list: UITextView!
     @IBOutlet var btnSave: UIButton!
     @IBOutlet var link_label: UIButton!
@@ -46,6 +47,7 @@ class RecipeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        recipe_button.adjustsFontSizeToFitWidth = true
         //disable edditting for text field
         ingredients_list.isEditable = false
         
@@ -68,7 +70,7 @@ class RecipeViewController: UIViewController {
         }
         
         // sets the button title
-        recipe_button.setTitle(recipe, for: .normal)
+        recipe_button.text = recipe
         
         // prints instructions
         var str_ingredients = String()
